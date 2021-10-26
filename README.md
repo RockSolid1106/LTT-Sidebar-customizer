@@ -3,7 +3,6 @@
 A very basic chrome extension to customize what is shows on the sidebar on linustechtips.com
 
 # Installation and Setup
-------------------------
 ## Easier Method
 1. Download and extract the code.
 2. Navigate to chrome://extensions.
@@ -30,7 +29,6 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 6. That's it for the installation part. Move over to Setup
 
 # Customizing the bar
------------
 1. Now, click "Details".
 
 ![image](https://user-images.githubusercontent.com/84492239/138812790-72d753bc-c6c4-4a73-868c-a7b3d76129a8.png)
