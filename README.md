@@ -25,7 +25,10 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 ![image](https://user-images.githubusercontent.com/84492239/138812988-a73ff769-8206-4af1-acf9-77fe64c75499.png)
 
 8. In the new page that opens, select the appropriate options as you prefer, and click "Submit".
-9. You're done! Check the LTT forum to check if the extension works!
+
+![image](https://user-images.githubusercontent.com/84492239/138813719-0b790266-38b6-42cc-9a10-516046229a41.png)
+
+10. You're done! Check the LTT forum to check if the extension works!
 
 
 # Errors and Issues
