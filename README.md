@@ -33,7 +33,7 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 
 ![image](https://user-images.githubusercontent.com/84492239/138812790-72d753bc-c6c4-4a73-868c-a7b3d76129a8.png)
 
-2. Scroll down to "Extension options, and click it.
+2. Scroll down to "Extension options", and click it.
 
 ![image](https://user-images.githubusercontent.com/84492239/138812988-a73ff769-8206-4af1-acf9-77fe64c75499.png)
 
