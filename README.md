@@ -9,15 +9,19 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 ![image](https://user-images.githubusercontent.com/84492239/138812513-55392678-fa16-4104-8a7b-c9db8c5ec8bf.png)
 
 4. On the top left, click "Load unpacked".
+
 ![image](https://user-images.githubusercontent.com/84492239/138812532-dcec8e73-5496-4008-9737-0e1018e01b74.png)
 
 5. Then, navigate to the the folder you extracted, and inside the folder, select the "Extension" folder. Let it load the extension.
+
 ![image](https://user-images.githubusercontent.com/84492239/138812632-2890408f-e1d9-432b-938e-37378d7c567b.png)
 
 6. Now, click "Details".
+
 ![image](https://user-images.githubusercontent.com/84492239/138812790-72d753bc-c6c4-4a73-868c-a7b3d76129a8.png)
 
 7. Scroll down to "Extension options, and click it.
+
 ![image](https://user-images.githubusercontent.com/84492239/138812988-a73ff769-8206-4af1-acf9-77fe64c75499.png)
 
 8. In the new page that opens, select the appropriate options as you prefer, and click "Submit".
