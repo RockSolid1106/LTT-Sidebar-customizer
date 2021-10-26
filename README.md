@@ -4,7 +4,7 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 
 # Installation and Setup
 ## Easier Method
-1. Download and extract the code.
+1. Download and extract the file, "Extension.crx".
 2. Navigate to chrome://extensions.
 3. Then drag and drop the "Extension.crx" file into the Chrome window. It should prompt you for permission to read and change data on linustechtips.com. Click "Add extension".
 4. You've now installed the extension. Move over to the customization section. [Customizing the bar](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/main/README.md#customizing-the-bar)
