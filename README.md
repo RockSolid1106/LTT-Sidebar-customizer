@@ -5,6 +5,7 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 1. Download the code, and extract the .zip file.
 2. Open Chrome, and navigate to chrome://extensions.
 3. On the top right, enable developer mode.
+
 ![image](https://user-images.githubusercontent.com/84492239/138812513-55392678-fa16-4104-8a7b-c9db8c5ec8bf.png)
 
 4. On the top left, click "Load unpacked".
