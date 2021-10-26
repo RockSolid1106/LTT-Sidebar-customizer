@@ -26,7 +26,7 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 
 ![image](https://user-images.githubusercontent.com/84492239/138812632-2890408f-e1d9-432b-938e-37378d7c567b.png)
 
-6. That's it for the installation part. Move over to Setup. [Markdown-link](#Setup)
+6. That's it for the installation part. Move over to Setup. [Customizing the bar](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/main/README.md#customizing-the-bar)
 
 # Customizing the bar
 1. Now, click "Details".
