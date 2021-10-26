@@ -1,7 +1,18 @@
 # LTT-Sidebar-customizer
+=============
 A very basic chrome extension to customize what is shows on the sidebar on linustechtips.com
 
 # Installation and Setup
+------------------------
+## Easier Method
+1. Download and extract the code.
+2. Navigate to chrome://extensions.
+3. Then drag and drop the "Extension.crx" file into the Chrome window. It should prompt you for permission to read and change data on linustechtips.com. Click "Add extension".
+4. You've now installed the extension. Move over to the setup section
+
+
+
+## Method 2
 1. Download the code, and extract the .zip file.
 2. Open Chrome, and navigate to chrome://extensions.
 3. On the top right, enable developer mode.
@@ -16,19 +27,23 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 
 ![image](https://user-images.githubusercontent.com/84492239/138812632-2890408f-e1d9-432b-938e-37378d7c567b.png)
 
-6. Now, click "Details".
+6. That's it for the installation part. Move over to Setup
+
+# Customizing the bar
+-----------
+1. Now, click "Details".
 
 ![image](https://user-images.githubusercontent.com/84492239/138812790-72d753bc-c6c4-4a73-868c-a7b3d76129a8.png)
 
-7. Scroll down to "Extension options, and click it.
+2. Scroll down to "Extension options, and click it.
 
 ![image](https://user-images.githubusercontent.com/84492239/138812988-a73ff769-8206-4af1-acf9-77fe64c75499.png)
 
-8. In the new page that opens, select the appropriate options as you prefer, and click "Submit".
+3. In the new page that opens, select the appropriate options as you prefer, and click "Submit".
 
 ![image](https://user-images.githubusercontent.com/84492239/138813719-0b790266-38b6-42cc-9a10-516046229a41.png)
 
-10. You're done! Check the LTT forum to check if the extension works!
+4. You're done! Check the LTT forum to check if the extension works!
 
 
 # Errors and Issues
