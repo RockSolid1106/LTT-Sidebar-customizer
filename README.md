@@ -7,7 +7,7 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 1. Download and extract the code.
 2. Navigate to chrome://extensions.
 3. Then drag and drop the "Extension.crx" file into the Chrome window. It should prompt you for permission to read and change data on linustechtips.com. Click "Add extension".
-4. You've now installed the extension. Move over to the setup section
+4. You've now installed the extension. Move over to the setup section. [Markdown-link](#Setup)
 
 
 
@@ -26,7 +26,7 @@ A very basic chrome extension to customize what is shows on the sidebar on linus
 
 ![image](https://user-images.githubusercontent.com/84492239/138812632-2890408f-e1d9-432b-938e-37378d7c567b.png)
 
-6. That's it for the installation part. Move over to Setup
+6. That's it for the installation part. Move over to Setup. [Markdown-link](#Setup)
 
 # Customizing the bar
 1. Now, click "Details".
