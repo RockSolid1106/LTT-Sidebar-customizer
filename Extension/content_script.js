@@ -12,10 +12,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details. */
 
 
-var vid=false;
-var soc=false;
-var feat=false;
-
 chrome.storage.sync.get({
     vid: false,
     social: false,
