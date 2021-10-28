@@ -3,15 +3,7 @@
 A very basic chrome extension to customize what is shown on the sidebar on linustechtips.com
 
 # Installation and Setup
-## Easier Method
-1. Download the file, "Extension.crx".
-2. Open Chrome, and navigate to chrome://extensions.
-3. Then drag and drop the "Extension.crx" file into the Chrome window. It should prompt you for permission to read and change data on linustechtips.com. Click "Add extension".
-4. You've now installed the extension. Move over to the customization section. [Customizing the bar](https://github.com/RockSolid1106/LTT-Sidebar-customizer#customizing-the-bar)
 
-
-
-## Method 2
 1. Download the code, and extract the .zip file.
 2. Open Chrome, and navigate to chrome://extensions.
 3. On the top right, enable developer mode.
