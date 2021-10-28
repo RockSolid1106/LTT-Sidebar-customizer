@@ -47,6 +47,8 @@ A very basic chrome extension to customize what is shown on the sidebar on linus
 # Errors and Issues
 Please raise an issue if the extension doesn't work properly. There might be some pages which I'm not aware of where the extension doesn't work. Please attach a screenshot of the console(Ctrl + Shift + J).
 
+# Feedback
+DM me on the forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username?
 
 ---------------------------------
 Side note: I'm kinda new to Github, so apologies if I can't find my way across some things here. Please bear with me, thanks!
