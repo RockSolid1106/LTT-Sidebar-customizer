@@ -9,8 +9,9 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.  */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body{
+  font-family: 'Inter', sans-serif;
   max-height: 100px;
   width: 300px;
 }

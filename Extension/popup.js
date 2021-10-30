@@ -13,12 +13,24 @@
 function restore_options() {
   // Use default value color = 'red' and likesColor = true.
   chrome.storage.sync.get({
-    vid: false,
     social: false,
     feat: false,
-    ad: false
+    ad: false,
+    all: false,
+    ltt: false,
+    tq: false,
+    tl: false,
+    sc: false,
+    ma: false,
+    csf: false
   }, function(items) {
-    document.getElementById('vids').checked = items.vid;
+    document.getElementById("vids").checked = items.all,
+    document.getElementById("ltt").checked = items.ltt,
+    document.getElementById("tq").checked = items.tq,
+    document.getElementById("tl").checked = items.tl,
+    document.getElementById("sc").checked = items.sc,
+    document.getElementById("ma").checked = items.ma,
+    document.getElementById("csf").checked = items.csf,
     document.getElementById('social').checked = items.social;
     document.getElementById('featured').checked = items.feat;
     document.getElementById('ad').checked = items.ad;
@@ -28,17 +40,45 @@ function restore_options() {
 document.addEventListener('DOMContentLoaded', restore_options);
 
 
-var vids = document.getElementById("submitbutton");
-vids.addEventListener("click", savevalues);
+var submit = document.getElementById("submitbutton");
+submit.addEventListener("click", savevalues);
 
 
 function savevalues(){
+  if (document.getElementById("ltt").checked && document.getElementById("tq").checked && document.getElementById("tl").checked && document.getElementById("sc").checked && document.getElementById("ma").checked && document.getElementById("csf").checked){
+    document.getElementById("vids").checked = true;
+  }
+  else {
+    document.getElementById("vids").checked = false;
+  }
+
   chrome.storage.sync.set({
-    vid: document.getElementById("vids").checked,
+    all: document.getElementById("vids").checked,
     social: document.getElementById("social").checked,
     feat: document.getElementById("featured").checked,
-    ad: document.getElementById("ad").checked
-
+    ltt: document.getElementById("ltt").checked,
+    tq: document.getElementById("tq").checked,
+    tl: document.getElementById("tl").checked,
+    sc: document.getElementById("sc").checked,
+    ma: document.getElementById("ma").checked,
+    csf: document.getElementById("csf").checked
+    
+    
   });
-   vids.value = "Done!"
+   submit.value = "Done!"
 }
+
+var vids = document.getElementById("vids");
+vids.addEventListener("change", allselect);
+
+function allselect() {
+  var x = document.getElementById("vids").checked;
+  document.getElementById("ltt").checked = x;
+  document.getElementById("tq").checked = x;
+  document.getElementById("tl").checked = x;
+  document.getElementById("sc").checked = x;
+  document.getElementById("ma").checked = x;
+  document.getElementById("csf").checked = x;
+
+}
+//work on making it work with all selected and store that accordingly
