@@ -35,6 +35,12 @@ A very basic chrome extension to customize what is shown on the sidebar on linus
 
 4. You're done! Check the LTT forum to check if the extension works!
 
+## Alternative
+If you have the extension pinned to the browser's address bar, you can click that and access the customization menu with ease.
+
+![image](https://user-images.githubusercontent.com/84492239/139524507-a248f92e-dc03-4858-9084-6a4a7c75e97c.png)
+
+
 
 # Errors and Issues
 Please raise an issue if the extension doesn't work properly. There might be some pages which I'm not aware of where the extension doesn't work. Please attach a screenshot of the console(Ctrl + Shift + J).
