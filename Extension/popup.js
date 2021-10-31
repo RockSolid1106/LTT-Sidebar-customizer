@@ -11,7 +11,7 @@
 // GNU General Public License for more details. 
 
 function restore_options() {
-  // Use default value color = 'red' and likesColor = true.
+  
   chrome.storage.sync.get({
     social: false,
     feat: false,
