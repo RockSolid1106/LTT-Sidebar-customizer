@@ -8,10 +8,11 @@
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.  
+// GNU General Public License for more details. 
 
 function restore_options() {
-  
+  document.getElementById("version").innerHTML = "Version: v"+chrome.runtime.getManifest().version
+  // Use default value color = 'red' and likesColor = true.
   chrome.storage.sync.get({
     social: false,
     feat: false,

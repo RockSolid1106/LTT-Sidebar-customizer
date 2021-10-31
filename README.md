@@ -2,7 +2,7 @@
 
 A very basic chrome extension to customize what is shown on the sidebar on linustechtips.com
 
-## Update v0.8.1 BETA 30-10-2021(DDMMYYYY not MMDDYYYY you Americans)
+## Update v0.8.2 BETA 30-10-2021(DDMMYYYY not MMDDYYYY you Americans)
 
 Improving configurator and adding an update feature.
 

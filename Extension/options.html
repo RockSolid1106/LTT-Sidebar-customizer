@@ -19,6 +19,7 @@ GNU General Public License for more details.  -->
     <link rel="stylesheet" href="button.css">
   </head>
   <body>
+    <span id="version"></span>
     <b><label><input type="checkbox" id="ad">Hide Ad</label><br></b>
     <b><label><input type="checkbox" id="featured">Hide the Featured Topics section</label><br></b>
     <b><label><input type="checkbox" id="social">Hide LMG Social Links(Discord, LTT merch, etc.)</label><br></b>
@@ -29,17 +30,26 @@ GNU General Public License for more details.  -->
     &nbsp&nbsp<label><input type="checkbox" id="sc">ShortCircuit</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="ma">Mac Address</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="csf">Channel Super Fun</label><br><br>
-    <input type="button" value="Submit" id="submitbutton">
+    <div id="container">
+    <input type="button" value="Submit" id="submitbutton"><br>
+  </div>
     <script src="popup.js"></script>
   </body>
 </html>
 <style>
   html {
     background-color: #1D1D1D;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
   }
   body{
-    color: white;
+    color: rgb(195, 195, 195);
     font-family: 'Inter', sans-serif;
+    font-size: 0.8em;
   }
   #submitbutton {
     -webkit-text-size-adjust: 100%;
@@ -185,14 +195,14 @@ GNU General Public License for more details.  -->
     -webkit-appearance: button;
     font-family: inherit;
     line-height: inherit;
-    font-size: 14px;
+    font-size: 0.9em;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
     white-space: nowrap;
-    display: inline-block;
     vertical-align: middle;
-    padding: 10px 20px;
+    padding: 4px;
+    position: inline-block;
     border-radius: var(--button--radius);
     border: 1px solid transparent;
     transition: 0.1s all linear;
@@ -203,5 +213,20 @@ GNU General Public License for more details.  -->
     color: rgb( var(--theme-primary_button_font) );
     text-transform: uppercase;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 100%);
+    width: 5em !important;
+    height: 2em !important;
+    position: absolute;
+    bottom: 0.4em;
+  }
+  
+  .container {
+    height: 1.7em;
+  }
+
+  #version {
+    position: absolute;
+    top: 0.4em;
+    right: 0.5em;
+    color: #DD6B20;
   }
 </style>
