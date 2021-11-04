@@ -11,8 +11,11 @@
 // GNU General Public License for more details. 
 
 function restore_options() {
-  // Use default value color = 'red' and likesColor = true.
+  document.getElementById("version").innerHTML = "Version: v"+chrome.runtime.getManifest().version
+
+
   chrome.storage.sync.get({
+    rtopics: false,
     social: false,
     feat: false,
     ad: false,
@@ -24,6 +27,7 @@ function restore_options() {
     ma: false,
     csf: false
   }, function(items) {
+    document.getElementById("rtopics").checked = items.rtopics,
     document.getElementById("vids").checked = items.all,
     document.getElementById("ltt").checked = items.ltt,
     document.getElementById("tq").checked = items.tq,
@@ -53,6 +57,7 @@ function savevalues(){
   }
 
   chrome.storage.sync.set({
+    rtopics: document.getElementById("rtopics").checked,
     all: document.getElementById("vids").checked,
     social: document.getElementById("social").checked,
     feat: document.getElementById("featured").checked,
@@ -81,4 +86,3 @@ function allselect() {
   document.getElementById("csf").checked = x;
 
 }
-//work on making it work with all selected and store that accordingly
