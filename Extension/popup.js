@@ -53,6 +53,8 @@ function savevalues(){
   }
 
   chrome.storage.sync.set({
+    rtopics: document.getElementById("rtopics").checked,
+    ad: document.getElementById("ad").checked,
     all: document.getElementById("vids").checked,
     social: document.getElementById("social").checked,
     feat: document.getElementById("featured").checked,
