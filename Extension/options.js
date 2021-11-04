@@ -13,6 +13,7 @@
 function restore_options() {
   // Use default value color = 'red' and likesColor = true.
   chrome.storage.sync.get({
+    rtopics: false,
     social: false,
     feat: false,
     ad: false,
@@ -24,6 +25,7 @@ function restore_options() {
     ma: false,
     csf: false
   }, function(items) {
+    document.getElementById("rtopics").checked = items.rtopics,
     document.getElementById("vids").checked = items.all,
     document.getElementById("ltt").checked = items.ltt,
     document.getElementById("tq").checked = items.tq,
