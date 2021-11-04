@@ -51,7 +51,7 @@ function savevalues(){
   else {
     document.getElementById("vids").checked = false;
   }
-
+ 
   chrome.storage.sync.set({
     rtopics: document.getElementById("rtopics").checked,
     ad: document.getElementById("ad").checked,
