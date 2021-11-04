@@ -17,15 +17,20 @@ GNU General Public License for more details.  -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="button.css">
+    
   </head>
   <body>
     <span id="version"></span>
+
+    <span id="latestversion"></span>
+
     <b><label><input type="checkbox" id="ad">Hide Ad</label><br></b>
+    <b><label><input type="checkbox" id="rtopics">Hide Recent Topics</label><br></b>
     <b><label><input type="checkbox" id="featured">Hide the Featured Topics section</label><br></b>
     <b><label><input type="checkbox" id="social">Hide LMG Social Links(Discord, LTT merch, etc.)</label><br></b>
     <b><label><input type="checkbox" id="vids">Hide All Recent LMG Videos</label><br></b>
     &nbsp&nbsp<label><input type="checkbox" id="ltt">Linus Tech Tips</label><br>
-    &nbsp&nbsp<label><input type="checkbox" id="tq">TechQuikie</label><br>
+    &nbsp&nbsp<label><input type="checkbox" id="tq">TechQuickie</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="tl">TechLinked</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="sc">ShortCircuit</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="ma">Mac Address</label><br>
@@ -226,6 +231,13 @@ GNU General Public License for more details.  -->
   #version {
     position: absolute;
     top: 0.4em;
+    right: 0.5em;
+    color: #DD6B20;
+
+  }
+  #latestversion {
+    position: absolute;
+    top: 0.8em;
     right: 0.5em;
     color: #DD6B20;
   }
