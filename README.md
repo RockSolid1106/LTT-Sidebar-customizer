@@ -2,10 +2,9 @@
 
 A very basic chrome extension to customize what is shown on the sidebar on linustechtips.com
 
-## Update v0.8 30-10-2021(DDMMYYYY not MMDDYYYY you Americans)
+## Update v0.8.2 BETA 30-10-2021(DDMMYYYY not MMDDYYYY you Americans)
 
-You can now specifically select which LMG videos you want to hide.
-Improved the configuration pages to have better fonts and look nicer overall.
+Improving configurator and adding an update feature.
 
 # Installation and Setup
 
