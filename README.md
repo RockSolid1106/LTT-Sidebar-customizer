@@ -2,12 +2,10 @@
 
 A very basic chrome extension to customize what is shown on the sidebar on linustechtips.com
 
-## Update v0.8.2 06-11-2021(DDMMYYYY)
+## Update v0.8.3 08-11-2021(DDMMYYYY)
 Changelogs:
 
-- Allows users to hide the Recent Topics section.
-- Minor configurator UI changes. Font color changed, and reduced the size of the submit button which previously was too large. Also added is the " Sidebar Customizer" to the configurators.
-- Minor changes which I think will help improve performance.
+- Now allows users to hide the Rocket like badge on user profiles.
 
 # Installation and Setup
 

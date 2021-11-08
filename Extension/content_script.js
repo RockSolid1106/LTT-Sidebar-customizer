@@ -24,7 +24,8 @@ chrome.storage.sync.get({
     tl: false,
     sc: false,
     ma: false,
-    csf: false
+    csf: false,
+    mbadges: false
   }, function(items) {
         if (items.feat==true){
             
@@ -197,6 +198,11 @@ chrome.storage.sync.get({
                 else {
                     document.querySelector('li[data-blockid="app_forums_topicFeed_zhgehlj5q"]').remove()
                 }
+            }catch(ex){console.log(ex)}
+        }
+        if (items.mbadges){
+            try{
+                document.querySelectorAll('.cAuthorPane_badge--rank').forEach(e => {e.remove()})
             }catch(ex){console.log(ex)}
         }
 
