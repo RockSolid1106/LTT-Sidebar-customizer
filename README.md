@@ -44,7 +44,8 @@ Changelogs:
 If you have the extension pinned to the browser's address bar, you can click that and access the customization menu with ease.
 
 
-![IGfqHMJmgI](https://user-images.githubusercontent.com/84492239/140597284-0a5dded1-97cf-4a7b-ba96-dbb04780eba8.png)
+![image](https://user-images.githubusercontent.com/84492239/140894601-6875b69f-001a-4e34-a70e-63b4a0f8a5ad.png)
+
 
 
 # Errors and Issues
