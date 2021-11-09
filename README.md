@@ -34,9 +34,9 @@ Changelogs:
 
 ![image](https://user-images.githubusercontent.com/84492239/138812988-a73ff769-8206-4af1-acf9-77fe64c75499.png)
 
-3. In the new page that opens, select the appropriate options as you prefer, and click "Submit".
+3. In the popup that opens, select the appropriate options as you prefer, and click "Submit".
 
-![image](https://user-images.githubusercontent.com/84492239/138813719-0b790266-38b6-42cc-9a10-516046229a41.png)
+![image](https://user-images.githubusercontent.com/84492239/140895203-652e2fc3-4fa2-4840-ba57-699e593f2348.png)
 
 4. You're done! Check the LTT forum to check if the extension works!
 
