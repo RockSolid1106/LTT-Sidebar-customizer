@@ -1,8 +1,11 @@
-# LTT-Sidebar-customizer
+# Linus Tech Tips forum sidebar customizer
 
-A very basic chrome extension to customize what is shown on the sidebar on linustechtips.com
+A very basic Chrome extension to customize what is shown on the sidebar on www.linustechtips.com
 
-## Update v0.8.3 08-11-2021(DDMMYYYY)
+![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
+)
+
+## Updated to v0.8.3 on August 11th 2021
 Changelogs:
 
 - Now allows users to hide the Rocket like badge on user profiles.
@@ -52,7 +55,8 @@ If you have the extension pinned to the browser's address bar, you can click tha
 Please raise an issue if the extension doesn't work properly. There might be some pages which I'm not aware of where the extension doesn't work. Please attach a screenshot of the console(Ctrl + Shift + J).
 
 # Feedback
-DM me on the forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username?
+DM me on the LTT forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username? /s
 
 ---------------------------------
 Side note: I'm kinda new to Github, so apologies if I can't find my way across some things here. Please bear with me, thanks!
+I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
