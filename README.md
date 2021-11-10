@@ -1,6 +1,7 @@
 # Linus Tech Tips forum sidebar customizer
 
 A very basic Chrome extension to customize what is shown on the sidebar on www.linustechtips.com
+I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
 )
@@ -59,4 +60,4 @@ DM me on the LTT forum. It's RockSolid1106 on the forum. What are you doing here
 
 ---------------------------------
 Side note: I'm kinda new to Github, so apologies if I can't find my way across some things here. Please bear with me, thanks!
-I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
+
