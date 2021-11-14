@@ -14,6 +14,8 @@ Changelogs:
 
 # Installation and Setup
 
+## Manual Installation on all Chrome-based browsers
+
 1. Download the code, and extract the .zip file.
 2. Open Chrome, and navigate to chrome://extensions.
 3. On the top right, enable developer mode.
@@ -29,6 +31,16 @@ Changelogs:
 ![image](https://user-images.githubusercontent.com/84492239/138812632-2890408f-e1d9-432b-938e-37378d7c567b.png)
 
 6. That's it for the installation part. Move over to Customization section. [Customizing the bar](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/main/README.md#customizing-the-bar)
+
+## Installation on Microsoft Edge
+
+This extension is available on the Microsoft Edge add-ons store!
+
+Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customizer/gdllbkllblabmflfhaekdalcdechepgl in Microsoft Edge and hit "Get"
+
+![edge](https://user-images.githubusercontent.com/83384667/141669386-4e976538-f6f9-4f31-ac0a-e00b68424c26.png)
+  
+
 
 # Customizing the bar
 1. Navigate to chrome://extensions. Now, click "Details" under the extension you just added.
