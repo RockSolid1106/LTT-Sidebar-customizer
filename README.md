@@ -7,7 +7,13 @@ I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
 )
 
-## Updated to v0.8.3 on August 11th 2021
+## Minor release: v0.8.4 on 14th August 2021
+Changelogs: 
+
+- Changed up the logos to not use any LTT/LMG material.
+- The extension will soon be up on the Edge Addons! Then, it will be just a one click install for you, and you won't have to go through all this hassle. Well provided you use Edge.
+
+## Updated to v0.8.3 on 11th August 2021
 Changelogs:
 
 - Now allows users to hide the Rocket like badge on user profiles.
