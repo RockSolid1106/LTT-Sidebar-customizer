@@ -1,8 +1,19 @@
-# LTT-Sidebar-customizer
+# Linus Tech Tips forum sidebar customizer
 
-A very basic chrome extension to customize what is shown on the sidebar on linustechtips.com
+A very basic Chrome extension to customize what is shown on the sidebar on www.linustechtips.com
 
-## Update v0.8.3 08-11-2021(DDMMYYYY)
+I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
+
+![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
+
+
+## Minor release: v0.8.4 on 14th August 2021
+Changelogs: 
+
+- Changed up the logos to not use any LTT/LMG material.
+- The extension will soon be up on the Edge Addons! Then, it will be just a one click install for you, and you won't have to go through all this hassle. Well provided you use Edge.
+
+## Updated to v0.8.3 on 11th August 2021
 Changelogs:
 
 - Now allows users to hide the Rocket like badge on user profiles.
@@ -34,9 +45,9 @@ Changelogs:
 
 ![image](https://user-images.githubusercontent.com/84492239/138812988-a73ff769-8206-4af1-acf9-77fe64c75499.png)
 
-3. In the new page that opens, select the appropriate options as you prefer, and click "Submit".
+3. In the popup that opens, select the appropriate options as you prefer, and click "Submit".
 
-![image](https://user-images.githubusercontent.com/84492239/138813719-0b790266-38b6-42cc-9a10-516046229a41.png)
+![image](https://user-images.githubusercontent.com/84492239/140895203-652e2fc3-4fa2-4840-ba57-699e593f2348.png)
 
 4. You're done! Check the LTT forum to check if the extension works!
 
@@ -44,14 +55,16 @@ Changelogs:
 If you have the extension pinned to the browser's address bar, you can click that and access the customization menu with ease.
 
 
-![IGfqHMJmgI](https://user-images.githubusercontent.com/84492239/140597284-0a5dded1-97cf-4a7b-ba96-dbb04780eba8.png)
+![image](https://user-images.githubusercontent.com/84492239/140894601-6875b69f-001a-4e34-a70e-63b4a0f8a5ad.png)
+
 
 
 # Errors and Issues
 Please raise an issue if the extension doesn't work properly. There might be some pages which I'm not aware of where the extension doesn't work. Please attach a screenshot of the console(Ctrl + Shift + J).
 
 # Feedback
-DM me on the forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username?
+DM me on the LTT forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username? /s
 
 ---------------------------------
 Side note: I'm kinda new to Github, so apologies if I can't find my way across some things here. Please bear with me, thanks!
+
