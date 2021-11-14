@@ -5,7 +5,7 @@ A very basic Chrome extension to customize what is shown on the sidebar on www.l
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
-)
+
 
 ## Minor release: v0.8.4 on 14th August 2021
 Changelogs: 
