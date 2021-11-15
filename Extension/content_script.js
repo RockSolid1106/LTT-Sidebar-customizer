@@ -26,7 +26,8 @@ chrome.storage.sync.get({
     ma: false,
     csf: false,
     mbadges: false,
-    group: false
+    group: false,
+    location: false
   }, function(items) {
         if (items.feat==true){
             
@@ -195,6 +196,7 @@ chrome.storage.sync.get({
                 document.querySelectorAll('.cAuthorPane_badge--rank').forEach(e => {e.remove()})
             }catch(ex){console.log(ex)}
         }
+        console.log(items.location)
 
         if (!items.location){
             try{
