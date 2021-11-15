@@ -196,7 +196,6 @@ chrome.storage.sync.get({
                 document.querySelectorAll('.cAuthorPane_badge--rank').forEach(e => {e.remove()})
             }catch(ex){console.log(ex)}
         }
-        console.log(items.location)
 
         if (!items.location){
             try{
