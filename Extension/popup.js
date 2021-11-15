@@ -24,7 +24,9 @@ function restore_options() {
     sc: false,
     ma: false,
     csf: false,
-    mbadges: false
+    mbadges: false,
+    group: false,
+    location: false
   }, function(items) {
     document.getElementById("rtopics").checked = items.rtopics,
     document.getElementById("vids").checked = items.all,
@@ -38,6 +40,9 @@ function restore_options() {
     document.getElementById('featured').checked = items.feat;
     document.getElementById('ad').checked = items.ad;
     document.getElementById('mbadges').checked = items.mbadges;
+    document.getElementById('group').checked = items.group;
+    document.getElementById('location').checked = items.location;
+
 
   });
 }
@@ -68,7 +73,10 @@ function savevalues(){
     sc: document.getElementById("sc").checked,
     ma: document.getElementById("ma").checked,
     csf: document.getElementById("csf").checked,
-    mbadges: document.getElementById("mbadges").checked
+    mbadges: document.getElementById("mbadges").checked,
+    group: document.getElementById("group").checked,
+    location: document.getElementById("location").checked
+
     
     
   });

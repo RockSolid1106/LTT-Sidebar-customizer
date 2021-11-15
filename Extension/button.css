@@ -12,6 +12,6 @@ GNU General Public License for more details.  */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body{
   font-family: 'Inter', sans-serif;
-  max-height: 250px;
+  height: 400px !important;
   width: 350px;
 }
