@@ -205,7 +205,7 @@ chrome.storage.sync.get({
         }
         if (items.group){
             try{
-                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerHTML != "Member" && e.innerHTML != "Floatplane Staff")
+                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerHTML != "Member" && e.innerHTML.startsWith("Floatplane"))
                 {e.remove()
                 }
                 })
