@@ -18,6 +18,13 @@ Changelogs:
 
 - Now allows users to hide the Rocket like badge on user profiles.
 
+# Installation on Microsoft Edge
+This extension is available on the Microsoft Edge add-ons store!
+Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customizer/gdllbkllblabmflfhaekdalcdechepgl in Microsoft Edge and hit "Get".
+![edge](https://user-images.githubusercontent.com/83384667/141669386-4e976538-f6f9-4f31-ac0a-e00b68424c26.png)
+
+
+
 # Installation and Setup
 
 1. Download the code, and extract the .zip file.
