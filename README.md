@@ -23,7 +23,7 @@ Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customi
 
 
 
-# Installation and Setup
+# Installation and Setup for non-Edge users
 
 1. Download the code, and extract the .zip file.
 2. Open Chrome, and navigate to chrome://extensions.
