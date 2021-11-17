@@ -20,9 +20,12 @@ GNU General Public License for more details.  -->
     
   </head>
   <body>
+    <div id="header"> 
     <span style="font-size: 1.5em;"><img src="images/logo2.png" style="height: 0.85em;"> Sidebar Customizer</span><br>
-    <span id="version"></span>
+    <span id="version"></span><br><br>
+   </div>
 
+    <div>
     <span id="latestversion"></span>
     <h3 style="padding: 0; margin: 0.3em;">Sidebar options:</h3>
     <b><label><input type="checkbox" id="ad">Hide Ad</label><br></b>
@@ -38,8 +41,9 @@ GNU General Public License for more details.  -->
     &nbsp&nbsp<label><input type="checkbox" id="csf">Channel Super Fun</label><br><br>
     <h3 style="padding: 0; margin: 0.3em;">Misc:</h3>
     <b><label><input type="checkbox" id="mbadges">Hide the blue rocket icons in the member profiles</label><br></b>
-    <b><label><input type="checkbox" id="group">Hide member group(Moderator, Administrator, etc)</label><br></b>
+    <b><label><input type="checkbox" id="group">Hide member group (Moderator, Administrator, etc)</label><br></b>
     <b><label><input type="checkbox" id="location">Hide the location below member's profiles</label><br></b><br>
+    </div><br><br>
 
     <div id="container">
     <input type="button" value="Submit" id="submitbutton"><br>
@@ -63,6 +67,11 @@ GNU General Public License for more details.  -->
     font-family: 'Inter', sans-serif;
     font-size: 0.8em;
   }
+
+  #header {
+    text-align: left;
+  }
+
   #submitbutton {
     -webkit-text-size-adjust: 100%;
     --sp-1: 4px;
@@ -236,17 +245,4 @@ GNU General Public License for more details.  -->
     height: 1.7em;
   }
 
-  #version {
-    position: absolute;
-    top: 0.4em;
-    right: 0.5em;
-    color: #DD6B20;
-
-  }
-  #latestversion {
-    position: absolute;
-    top: 0.8em;
-    right: 0.5em;
-    color: #DD6B20;
-  }
 </style>
