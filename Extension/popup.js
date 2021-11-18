@@ -26,7 +26,11 @@ function restore_options() {
     csf: false,
     mbadges: false,
     group: false,
-    location: false
+    location: false,
+    rank: false,
+    pcount: false,
+    soln: false,
+    level: false
   }, function(items) {
     document.getElementById("rtopics").checked = items.rtopics,
     document.getElementById("vids").checked = items.all,
@@ -42,7 +46,10 @@ function restore_options() {
     document.getElementById('mbadges').checked = items.mbadges;
     document.getElementById('group').checked = items.group;
     document.getElementById('location').checked = items.location;
-
+    document.getElementById('mrank').checked = items.rank;
+    document.getElementById("replpcount").checked = items.pcount;
+    document.getElementById("soln").checked = items.soln;
+    document.getElementById("level").checked = items.level;
 
   });
 }
@@ -75,9 +82,11 @@ function savevalues(){
     csf: document.getElementById("csf").checked,
     mbadges: document.getElementById("mbadges").checked,
     group: document.getElementById("group").checked,
-    location: document.getElementById("location").checked
-
-    
+    location: document.getElementById("location").checked,
+    rank: document.getElementById("mrank").checked,
+    pcount: document.getElementById("replpcount").checked,
+    soln: document.getElementById("soln").checked,
+    level: document.getElementById("level").checked
     
   });
    submit.value = "Done!"
