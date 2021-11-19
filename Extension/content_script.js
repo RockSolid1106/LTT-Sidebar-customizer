@@ -25,44 +25,43 @@ chrome.storage.sync.get({
     sc: false,
     ma: false,
     csf: false,
+    ////
     mbadges: false,
     group: false,
-    location: false
+    location: false,
+    rank: false,
+    pcount: false,
+    soln: false,
+    level: false
   }, function(items) {
         if (items.feat==true){
-            
-                let element3 = document.querySelector('li[data-blockid="app_forums_topicFeed_yxyq4buu6"]')
-                if (element3 != null){
-                element3.remove()
+            try{
+                if (document.querySelector('li[data-blockid="app_forums_topicFeed_yxyq4buu6"]') != null){
+                    document.querySelector('li[data-blockid="app_forums_topicFeed_yxyq4buu6"]').remove()
                 }
                 else if (document.querySelector('li[data-blockid="app_forums_topicFeed_dpltxl1vm"]') != null){
-                    element3 = document.querySelector('li[data-blockid="app_forums_topicFeed_dpltxl1vm"]')
-                    element3.remove()
+                    document.querySelector('li[data-blockid="app_forums_topicFeed_dpltxl1vm"]').remove()
                 }
                 else {
-                    element3 = document.querySelector('li[data-blockid="app_forums_topicFeed_6pz746tdr"]')
-                    element3.remove()
+                    document.querySelector('li[data-blockid="app_forums_topicFeed_6pz746tdr"]').remove()
                 }
-                
+            }catch(ex){console.log(ex)}  
 
         }
 
         
         if (items.social==true){
-            
-            let element2 = document.querySelector('li[data-blockid="app_cms_Blocks_lwnptbsqn"]')
-            if (element2 != null){
-            element2.remove()
+            try{
+            if (document.querySelector('li[data-blockid="app_cms_Blocks_lwnptbsqn"]') != null){
+                document.querySelector('li[data-blockid="app_cms_Blocks_lwnptbsqn"]').remove()
             }
             else if(document.querySelector('li[data-blockid="app_cms_Blocks_vygscspy7"]') != null){
-                element2 = document.querySelector('li[data-blockid="app_cms_Blocks_vygscspy7"]')
-                element2.remove()
+                document.querySelector('li[data-blockid="app_cms_Blocks_vygscspy7"]').remove()
             }
             else {
-                element2 = document.querySelector('li[data-blockid="app_cms_Blocks_6rae4q53s"]')
-                element2.remove()
+                document.querySelector('li[data-blockid="app_cms_Blocks_6rae4q53s"]').remove()
             }
-            
+        }catch(ex){console.log(ex)}  
 
         }
         if (items.ad == true){
@@ -191,6 +190,20 @@ chrome.storage.sync.get({
                 }
             }catch(ex){console.log(ex)}
         }
+
+        if (items.rank){
+            try {
+                document.querySelectorAll('.cAuthorPane').forEach( panel => { 
+                    let badge = panel.querySelector(".cAuthorPane_badge--rank");
+                    let stats = panel.querySelector(".cAuthorPane_stats");
+                    let infolist = panel.querySelector(".cAuthorPane_info"); 
+                    let ranktext = panel.querySelector('li[data-role="group"]')
+                    ranktext.innerHTML = badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, "");
+                    
+                  })
+            }catch(ex){console.log(ex)}
+        }
+
         if (items.mbadges){
             try{
                 document.querySelectorAll('.cAuthorPane_badge--rank').forEach(e => {e.remove()})
@@ -204,6 +217,28 @@ chrome.storage.sync.get({
                 .replaceWith(function(){return this.data;})
             }catch(ex){console.log(ex)}
         }
+
+        if (items.pcount){
+            try {
+                document.querySelectorAll('.cAuthorPane_stats').forEach(function(panel) { 
+                    let posts = panel.querySelectorAll('.ipsType_blendLinks')
+                    posts[0].innerHTML = posts[0].getAttribute("title");
+                    try {
+                    if (items.soln){posts[1].parentElement.remove();}
+                    }catch(ex){console.log(ex)}
+                })
+            }catch(ex){console.log(ex)}
+        }
+
+        if (items.level){
+            try {
+                let x = $('.lmgNav_constrainedMenu').contents().filter(function(){return this.nodeType === 8;})[1];
+                $(x).replaceWith(x.nodeValue);
+            }catch(ex){console.log(ex)}
+        }
+
+
+
         if (items.group){
             try{
                 document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerHTML != "Member" && e.innerHTML != '<span style="color:#f0f">Floatplane Staff</span>')

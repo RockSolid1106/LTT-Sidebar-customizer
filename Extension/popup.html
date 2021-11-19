@@ -1,10 +1,8 @@
 <!-- Copyright © 2021  RockSolid106
-
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -20,9 +18,12 @@ GNU General Public License for more details.  -->
     
   </head>
   <body>
+    <div id="header"> 
     <span style="font-size: 1.5em;"><img src="images/logo2.png" style="height: 0.85em;"> Sidebar Customizer</span><br>
-    <span id="version"></span>
+    <span id="version"></span><br><br>
+   </div>
 
+    <div>
     <span id="latestversion"></span>
     <h3 style="padding: 0; margin: 0.3em;">Sidebar options:</h3>
     <b><label><input type="checkbox" id="ad">Hide Ad</label><br></b>
@@ -37,12 +38,17 @@ GNU General Public License for more details.  -->
     &nbsp&nbsp<label><input type="checkbox" id="ma">Mac Address</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="csf">Channel Super Fun</label><br><br>
     <h3 style="padding: 0; margin: 0.3em;">Misc:</h3>
-    <b><label><input type="checkbox" id="mbadges">Hide the blue rocket icons in the member profiles</label><br></b>
-    <b><label><input type="checkbox" id="group">Hide member group(Moderator, Administrator, etc)</label><br></b>
-    <b><label><input type="checkbox" id="location">Hide the location below member's profiles</label><br></b><br>
+    <b><label><input type="checkbox" id="mbadges">Hide the rank icons in the member profiles</label><br></b>
+    <b><label><input type="checkbox" id="mrank">Replace the "Member" with the user's rank</label><br></b>
+    <b><label><input type="checkbox" id="replpcount">Replace the post count with complete post count</label><br></b>
+    <b><label><input type="checkbox" id="soln">Remove the solutions count</label><br></b>
+    <b><label><input type="checkbox" id="group">Hide member group (Moderator, Administrator, etc)</label><br></b>
+    <b><label><input type="checkbox" id="location">Hide the location below member's profiles</label><br></b>
+    <b><label><input type="checkbox" id="level">Show your level/rank in the profile dropdown</label><br></b><br>
+    </div><br><br>
 
     <div id="container">
-    <input type="button" value="Submit" id="submitbutton"><br>
+    <input type="button" value="Submit" id="submitbutton">
   </div>
     <script src="popup.js"></script>
   </body>
@@ -62,6 +68,15 @@ GNU General Public License for more details.  -->
     color: rgb(195, 195, 195);
     font-family: 'Inter', sans-serif;
     font-size: 0.8em;
+  }
+
+  #header {
+    text-align: center;
+  }
+  #version {
+    
+    /* color: #DD6B20; */
+
   }
   #submitbutton {
     -webkit-text-size-adjust: 100%;
@@ -232,21 +247,13 @@ GNU General Public License for more details.  -->
     margin-bottom: 0.4em;
   }
   
-  .container {
-    height: 1.7em;
+  #container {
+    /* height: 1.7em; */
+    position: absolute;
+    left: 40%;
+    bottom: 0;
   }
-
   #version {
-    position: absolute;
-    top: 0.4em;
-    right: 0.5em;
-    color: #DD6B20;
-
-  }
-  #latestversion {
-    position: absolute;
-    top: 0.8em;
-    right: 0.5em;
     color: #DD6B20;
   }
 </style>
