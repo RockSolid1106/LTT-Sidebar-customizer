@@ -1,3 +1,4 @@
+## This branch is under developement. The code probably wouldn't work.
 # Linus Tech Tips forum sidebar customizer
 
 A very basic Chrome extension to customize what is shown on the sidebar on www.linustechtips.com
