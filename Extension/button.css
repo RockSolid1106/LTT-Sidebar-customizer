@@ -1,4 +1,4 @@
-/* Copyright (C) 2021  RockSolid106
+/* Copyright © 2021  RockSolid1106
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -10,9 +10,18 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.  */ 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-body{
-  font-family: 'Inter', sans-serif;
-  height: 400px !important;
-  width: 350px;
-  margin: 0.4em;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+body, html{
+  
+  font-family: 'Inter', sans-serif; 
+  /* font-family: 'Source Sans Pro', sans-serif; */
+
+  
+}
+
+* {
+  font-family: 'Source Sans Pro', sans-serif !important;
+
 }

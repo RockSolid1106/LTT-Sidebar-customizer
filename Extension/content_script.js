@@ -1,5 +1,5 @@
 /* This Chrome extension easily allows you to customize what is shown on the sidebar on the LTT Forum.
-Copyright © 2021  RockSolid106
+Copyright © 2021  RockSolid1106
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -12,7 +12,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details. */ 
 
 
-chrome.storage.sync.get({
+browser.storage.sync.get({
     rtopics: false,
     social: false,
     feat: false,
@@ -198,7 +198,7 @@ chrome.storage.sync.get({
                     let stats = panel.querySelector(".cAuthorPane_stats");
                     let infolist = panel.querySelector(".cAuthorPane_info"); 
                     let ranktext = panel.querySelector('li[data-role="group"]')
-                    ranktext.innerHTML = badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, "");
+                    ranktext.innerText = badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, "");
                     
                   })
             }catch(ex){console.log(ex)}
@@ -222,7 +222,7 @@ chrome.storage.sync.get({
             try {
                 document.querySelectorAll('.cAuthorPane_stats').forEach(function(panel) { 
                     let posts = panel.querySelectorAll('.ipsType_blendLinks')
-                    posts[0].innerHTML = posts[0].getAttribute("title");
+                    posts[0].innerText = posts[0].getAttribute("title");
                     try {
                     if (items.soln){posts[1].parentElement.remove();}
                     }catch(ex){console.log(ex)}
