@@ -105,17 +105,3 @@ function allselect() {
   document.getElementById("csf").checked = x;
 
 }
-
-var member = document.getElementById("group");
-member.addEventListener("change", membercheck)
-
-function membercheck() {
-  if (member.checked == true){
-    document.getElementById("mrank").checked = false;
-    document.getElementById("mrank").disabled = true;
-  }
-  if (member.checked == false){
-    
-    document.getElementById("mrank").disabled = false;
-  }
-}
