@@ -20,8 +20,6 @@ Changelogs:
 - You can choose to see the rank stats in the profile dropdown, which was only available in the mobile version of the site.
 
 # Installation
-#### This website isn't working as of yet.
-
 Please visit https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum/, and then Add to Firefox.
 
 # Customizing
