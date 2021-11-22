@@ -191,14 +191,29 @@ browser.storage.sync.get({
             }catch(ex){console.log(ex)}
         }
 
+        if (items.group){
+            try{
+                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerText != "Member" && e.innerText != 'Floatplane Staff' && e.innerText != 'Folding Team Leader')
+                {e.remove()
+                }
+                })
+            }catch(ex){console.log(ex)}
+        }
+
+
         if (items.rank){
             try {
-                document.querySelectorAll('.cAuthorPane').forEach( panel => { 
+                document.querySelectorAll('.cAuthorPane').forEach( panel => {
+                    try{
                     let badge = panel.querySelector(".cAuthorPane_badge--rank");
-                    let stats = panel.querySelector(".cAuthorPane_stats");
-                    let infolist = panel.querySelector(".cAuthorPane_info"); 
+                    console.log(badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, ""))
                     let ranktext = panel.querySelector('li[data-role="group"]')
-                    ranktext.innerText = badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, "");
+                    let e = ranktext
+                    console.log(e.innerText)
+                    if (e.innerText == "Member"){
+                    ranktext.innerHTML = badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, "");
+                    }
+                }catch(ex){console.log(ex)}
                     
                   })
             }catch(ex){console.log(ex)}
@@ -238,16 +253,11 @@ browser.storage.sync.get({
         }
 
 
+        document.querySelectorAll(".cAuthorGroupIcon").forEach(e => {e.style.margin = "3px"})
 
-        if (items.group){
-            try{
-                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerHTML != "Member" && e.innerHTML != '<span style="color:#f0f">Floatplane Staff</span>')
-                {e.remove()
-                }
-                })
-            }catch(ex){console.log(ex)}
-        }
   })
+
+
 
 
 /*Just getting jquery here cuz LTT blocks all cross site requests which prevents me from importing jquery from the website.
