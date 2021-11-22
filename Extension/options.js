@@ -1,4 +1,4 @@
-// Copyright © 2021  RockSolid106
+// Copyright © 2021  RockSolid1106
 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -11,8 +11,8 @@
 // GNU General Public License for more details. 
 
 function restore_options() {
-  document.getElementById("version").innerHTML = "Version: v" + chrome.runtime.getManifest().version;
-  chrome.storage.sync.get({
+  document.getElementById("version").innerText = "Version: v" + chrome.runtime.getManifest().version;
+  browser.storage.sync.get({
     rtopics: false,
     social: false,
     feat: false,
@@ -68,7 +68,7 @@ function savevalues(){
     document.getElementById("vids").checked = false;
   }
  
-  chrome.storage.sync.set({
+  browser.storage.sync.set({
     rtopics: document.getElementById("rtopics").checked,
     ad: document.getElementById("ad").checked,
     all: document.getElementById("vids").checked,
@@ -104,4 +104,18 @@ function allselect() {
   document.getElementById("ma").checked = x;
   document.getElementById("csf").checked = x;
 
+}
+
+var member = document.getElementById("group");
+member.addEventListener("change", membercheck)
+
+function membercheck() {
+  if (member.checked == true){
+    document.getElementById("mrank").checked = false;
+    document.getElementById("mrank").disabled = true;
+  }
+  if (member.checked == false){
+    
+    document.getElementById("mrank").disabled = false;
+  }
 }
