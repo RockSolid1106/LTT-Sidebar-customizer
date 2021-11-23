@@ -1,23 +1,18 @@
+# Linus Tech Tips forum customizer
 
-# Linus Tech Tips forum sidebar customizer
-
-A very basic Chrome extension to customize what is shown on the sidebar on www.linustechtips.com
+A very basic Chrome extension to customize what is shown on the forum on www.linustechtips.com in some different ways
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
 
 
-## Updated to v0.8.6 on 19th November, 2021
-Changelogs:
+## Updated to v0.8.5 on 15th August, 2021
+Changelogs
+- You can now select if you want the location of the member to be shown below their profile.
+- An option to hide the groups for Moderator, Administrator, the groups which also have badges has been added.
 
-#### Profile features
-- You can now replace the title "Member" with the member's rank.
-- You can remove the solutions count.
-- You can now replace the decimal post count with the full post count. Above changes basically bring it to how it looked before the forum upgrade.
-
-#### Misc
-- You can choose to see the rank stats in the profile dropdown, which was only available in the mobile version of the site.
+![image](https://user-images.githubusercontent.com/84492239/141821664-711467be-9c6e-4178-ad12-60f393af4e01.png)
 
 
 
@@ -28,7 +23,17 @@ Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customi
 
 
 
-# Installation and Setup for non-Edge users
+# Installation on Mozilla Firefox
+This extension is also available on the Mozilla Firefox add-ons store!
+Just go to https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum/ in Mozilla Firefox and Hit "Add to Firefox".
+![Screenshot (2)](https://user-images.githubusercontent.com/83384667/143074807-3ad7981c-55ab-43b9-a6ee-ed5de82e3127.png)
+
+
+
+
+
+
+# Installation and Setup for Chrome-based browsers
 
 1. Download the code, and extract the .zip file.
 2. Open Chrome, and navigate to chrome://extensions.
@@ -44,10 +49,10 @@ Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customi
 
 ![image](https://user-images.githubusercontent.com/84492239/138812632-2890408f-e1d9-432b-938e-37378d7c567b.png)
 
-6. That's it for the installation part. Move over to Customization section. [Customizing the bar](https://github.com/RockSolid1106/LTT-Sidebar-customizer#customizing-the-bar)
+6. That's it for the installation part. Move over to Customization section. [Customizing the bar](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/main/README.md#customizing-the-bar)
 
 # Customizing the bar
-1. Navigate to chrome://extensions(or edge://extensions). Now, click "Details" under the extension you just added.
+1. Navigate to chrome://extensions. Now, click "Details" under the extension you just added.
 
 ![image](https://user-images.githubusercontent.com/84492239/138812790-72d753bc-c6c4-4a73-868c-a7b3d76129a8.png)
 
@@ -56,16 +61,17 @@ Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customi
 ![image](https://user-images.githubusercontent.com/84492239/138812988-a73ff769-8206-4af1-acf9-77fe64c75499.png)
 
 3. In the popup that opens, select the appropriate options as you prefer, and click "Submit".
+![Screenshot (3)](https://user-images.githubusercontent.com/83384667/143075314-195db733-b534-4c58-b503-5bd0314ad3bc.png)
 
-![image](https://user-images.githubusercontent.com/84492239/140895203-652e2fc3-4fa2-4840-ba57-699e593f2348.png)
 
 4. You're done! Check the LTT forum to check if the extension works!
 
 ## Alternative
 If you have the extension pinned to the browser's address bar, you can click that and access the customization menu with ease.
 
+![Screenshot (1)](https://user-images.githubusercontent.com/83384667/143073956-f038618d-dfb0-4fe2-b531-783319eb65d0.png)
 
-![image](https://user-images.githubusercontent.com/84492239/140894601-6875b69f-001a-4e34-a70e-63b4a0f8a5ad.png)
+
 
 
 
