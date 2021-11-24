@@ -7,10 +7,16 @@ I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
 
 
-## Updated to v0.8.5 on 15th August, 2021
-Changelogs
-- You can now select if you want the location of the member to be shown below their profile.
-- An option to hide the groups for Moderator, Administrator, the groups which also have badges has been added.
+## Updated to v0.8.6 on 19th November, 2021
+Changelogs:
+
+#### Profile features
+- You can now replace the title "Member" with the member's rank.
+- You can remove the solutions count.
+- You can now replace the decimal post count with the full post count. Above changes basically bring it to how it looked before the forum upgrade.
+
+#### Misc
+- You can choose to see the rank stats in the profile dropdown, which was only available in the mobile version of the site.
 
 ![image](https://user-images.githubusercontent.com/84492239/141821664-711467be-9c6e-4178-ad12-60f393af4e01.png)
 
