@@ -29,6 +29,10 @@ This extension is also available on the Mozilla Firefox add-ons store!
 Just go to https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum/ in Mozilla Firefox and Hit "Add to Firefox".
 ![Screenshot (2)](https://user-images.githubusercontent.com/83384667/143074807-3ad7981c-55ab-43b9-a6ee-ed5de82e3127.png)
 
+Alternatively, go to https://lttforumcustomizer.github.io/install.html and click on "Add to Firefox".
+![screen](https://user-images.githubusercontent.com/83384667/143372813-6ffc1e15-4cf8-45b2-9404-177ca9d94ab4.png)
+
+
 
 
 # Installation and Setup for Chromium-based browsers
