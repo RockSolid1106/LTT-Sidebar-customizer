@@ -1,12 +1,9 @@
 
-# Linus Tech Tips forum sidebar customizer
+# Linus Tech Tips forum customizer
 
-A very basic Chrome extension to customize what is shown on the sidebar on www.linustechtips.com
+A basic Chrome extension to customize the www.linustechtips.com forum.
 
-I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
-
-![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
-
+I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
 ## Updated to v0.8.6 on 19th November, 2021
 Changelogs:
@@ -27,8 +24,14 @@ Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customi
 ![edge](https://user-images.githubusercontent.com/83384667/141669386-4e976538-f6f9-4f31-ac0a-e00b68424c26.png)
 
 
+# Installation on Mozilla Firefox
+This extension is also available on the Mozilla Firefox add-ons store!
+Just go to https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum/ in Mozilla Firefox and Hit "Add to Firefox".
+![Screenshot (2)](https://user-images.githubusercontent.com/83384667/143074807-3ad7981c-55ab-43b9-a6ee-ed5de82e3127.png)
 
-# Installation and Setup for non-Edge users
+
+
+# Installation and Setup for Chromium-based browsers
 
 1. Download the code, and extract the .zip file.
 2. Open Chrome, and navigate to chrome://extensions.
@@ -57,7 +60,7 @@ Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customi
 
 3. In the popup that opens, select the appropriate options as you prefer, and click "Submit".
 
-![image](https://user-images.githubusercontent.com/84492239/140895203-652e2fc3-4fa2-4840-ba57-699e593f2348.png)
+![image](https://user-images.githubusercontent.com/83384667/143075314-195db733-b534-4c58-b503-5bd0314ad3bc.png)
 
 4. You're done! Check the LTT forum to check if the extension works!
 
@@ -65,7 +68,7 @@ Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customi
 If you have the extension pinned to the browser's address bar, you can click that and access the customization menu with ease.
 
 
-![image](https://user-images.githubusercontent.com/84492239/140894601-6875b69f-001a-4e34-a70e-63b4a0f8a5ad.png)
+![image](https://user-images.githubusercontent.com/83384667/143073956-f038618d-dfb0-4fe2-b531-783319eb65d0.png)
 
 
 
@@ -74,7 +77,3 @@ Please raise an issue if the extension doesn't work properly. There might be som
 
 # Feedback
 DM me on the LTT forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username? /s
-
----------------------------------
-Side note: I'm kinda new to Github, so apologies if I can't find my way across some things here. Please bear with me, thanks!
-
