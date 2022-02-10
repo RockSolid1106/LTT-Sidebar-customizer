@@ -5,16 +5,17 @@ A basic Chrome extension to customize the www.linustechtips.com forum.
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
-## Updated to v0.8.6 on 19th November, 2021
+## Updated to v0.8.8 on 10th Februaru, 2022
 Changelogs:
 
-#### Profile features
-- You can now replace the title "Member" with the member's rank.
-- You can remove the solutions count.
-- You can now replace the decimal post count with the full post count. Above changes basically bring it to how it looked before the forum upgrade.
+#### Forums
+- The LTT Official forum can now be hidden.
+- LTT Official forum can be moved below The Hub.
+- LTT Releases and Forum Information can be moved to The Hub.
 
-#### Misc
-- You can choose to see the rank stats in the profile dropdown, which was only available in the mobile version of the site.
+
+#### Advanced[Minor]
+- Added an option to enable logging for troubleshooting. You'll want to keep this turned off unless you're submitting a bug report to screenshot the console.
 
 
 
