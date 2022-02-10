@@ -32,7 +32,12 @@ browser.storage.sync.get({
     rank: false,
     pcount: false,
     soln: false,
-    level: false
+    level: false,
+    hideofficial: false,
+    moveinfo: false,
+    movereleases: false,
+    moveofficial: false,
+    logging: false
   }, function(items) {
         if (items.feat==true){
             try{
@@ -45,7 +50,7 @@ browser.storage.sync.get({
                 else {
                     document.querySelector('li[data-blockid="app_forums_topicFeed_6pz746tdr"]').remove()
                 }
-            }catch(ex){console.log(ex)}  
+            }catch(ex){if (items.logging) {console.log(ex)}}  
 
         }
 
@@ -61,7 +66,7 @@ browser.storage.sync.get({
             else {
                 document.querySelector('li[data-blockid="app_cms_Blocks_6rae4q53s"]').remove()
             }
-        }catch(ex){console.log(ex)}  
+        }catch(ex){if (items.logging) {console.log(ex)}}  
 
         }
         if (items.ad == true){
@@ -69,7 +74,7 @@ browser.storage.sync.get({
             try{
                 
                 document.querySelector("div[data-role='sidebarAd']").remove()
-            } catch(ex) {console.log(ex)}
+            } catch(ex) {if (items.logging) {console.log(ex)}}
         }
         ////////
 
@@ -87,7 +92,7 @@ browser.storage.sync.get({
                     
                     document.querySelector('li[data-blockid="app_lmgsys_latestVideos_sl3ntfu2v"]').remove()
                 }
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.tq) {
@@ -105,7 +110,7 @@ browser.storage.sync.get({
                     
                     document.querySelector('li[data-blockid="app_lmgsys_latestVideos_zsf5xw7tj"]').remove()
                 }
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.tl) {
@@ -123,7 +128,7 @@ browser.storage.sync.get({
                     
                     document.querySelector('li[data-blockid="app_lmgsys_latestVideos_msogh6kit"]').remove()
                 }
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.sc) {
@@ -140,7 +145,7 @@ browser.storage.sync.get({
                     
                     document.querySelector('li[data-blockid="app_lmgsys_latestVideos_r40stprfe"]').remove()
                 }
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.ma) {
@@ -157,7 +162,7 @@ browser.storage.sync.get({
                     
                     document.querySelector('li[data-blockid="app_lmgsys_latestVideos_scr82rwww"]').remove()
                 }
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.csf) {
@@ -174,7 +179,7 @@ browser.storage.sync.get({
                     
                     document.querySelector('li[data-blockid="app_lmgsys_latestVideos_vfxqo3v1o"]').remove()
                 }
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
         if (items.rtopics){
             try {
@@ -188,7 +193,7 @@ browser.storage.sync.get({
                 else {
                     document.querySelector('li[data-blockid="app_forums_topicFeed_zhgehlj5q"]').remove()
                 }
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.group){
@@ -197,7 +202,7 @@ browser.storage.sync.get({
                 {e.remove()
                 }
                 })
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
 
@@ -206,23 +211,22 @@ browser.storage.sync.get({
                 document.querySelectorAll('.cAuthorPane').forEach( panel => {
                     try{
                     let badge = panel.querySelector(".cAuthorPane_badge--rank");
-                    console.log(badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, ""))
+                    
                     let ranktext = panel.querySelector('li[data-role="group"]')
                     let e = ranktext
-                    console.log(e.innerText)
                     if (e.innerText == "Member"){
                     ranktext.innerHTML = badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, "");
                     }
-                }catch(ex){console.log(ex)}
+                }catch(ex){if (items.logging) {console.log(ex)}}
                     
                   })
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.mbadges){
             try{
                 document.querySelectorAll('.cAuthorPane_badge--rank').forEach(e => {e.remove()})
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (!items.location){
@@ -230,7 +234,7 @@ browser.storage.sync.get({
                 $('aside ul').contents()
                 .filter(function(){return this.nodeType === 8;}) //get the comments
                 .replaceWith(function(){return this.data;})
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.pcount){
@@ -240,16 +244,40 @@ browser.storage.sync.get({
                     posts[0].innerText = posts[0].getAttribute("title");
                     try {
                     if (items.soln){posts[1].parentElement.remove();}
-                    }catch(ex){console.log(ex)}
+                    }catch(ex){if (items.logging) {console.log(ex)}}
                 })
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
         if (items.level){
             try {
                 let x = $('.lmgNav_constrainedMenu').contents().filter(function(){return this.nodeType === 8;})[1];
                 $(x).replaceWith(x.nodeValue);
-            }catch(ex){console.log(ex)}
+            }catch(ex){if (items.logging) {console.log(ex)}}
+        }
+        if (items.moveofficial){
+            try {
+                document.querySelector('[data-categoryid="80"]').parentNode.insertBefore(document.querySelector('[data-categoryid="99"]'), document.querySelector('[data-categoryid="80"]').nextSibling);
+            }catch(ex){if (items.logging) {console.log(ex)}}
+        }
+        if (items.movereleases){
+            try {
+                var a = document.querySelector('[data-categoryid="99"]').querySelector('li[data-forumid="17"]')
+                document.querySelector('[data-categoryid="80"]').querySelector('[data-role="forums"]').innerHTML += a.outerHTML
+                a.remove()
+            }catch(ex){if (items.logging) {console.log(ex)}}
+        }
+        if (items.moveinfo){
+            try {
+                var a = document.querySelector('[data-categoryid="99"]').querySelector('li[data-forumid="23"]')
+                document.querySelector('[data-categoryid="80"]').querySelector('[data-role="forums"]').innerHTML += a.outerHTML
+                a.remove()
+            }catch(ex){if (items.logging) {console.log(ex)}}
+        }
+        if (items.hideofficial){
+            try {
+                document.querySelector('[data-categoryid="99"]').remove()
+            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
 

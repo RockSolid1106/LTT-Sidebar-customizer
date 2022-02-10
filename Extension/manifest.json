@@ -1,7 +1,7 @@
 {
   "name": "LTT Sidebar Customizer",
   "description": "A very basic extension to customize what is shown on the sidebar on linustechtips.com",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "manifest_version": 2,
 
   "options_ui": {
@@ -21,5 +21,12 @@
         "matches": ["https://linustechtips.com/*"],
         "js": ["/content_script.js"]
     }
-]
+],
+"browser_specific_settings": {
+  "gecko": {
+    "id": "addon@example.com",
+    "strict_min_version": "42.0"
+  }
+}
+
 }
