@@ -18,9 +18,9 @@ GNU General Public License for more details.  -->
     
   </head>
   <body>
-    <div id="header"> 
-    <span style="font-size: 1.5em;"><img src="images/logo2.png" style="height: 0.85em;"> Sidebar Customizer</span><br>
-    <span id="version"></span><br><br>
+    <div id="header" style="margin-left: 10%;"> 
+    <center><span style="font-size: 1.5em;"><img src="images/logo2.png" style="height: 0.85em;"> Sidebar Customizer</span><br></center>
+    <center><span id="version"></span><br><br></center>
    </div>
 
     <div>
@@ -37,6 +37,7 @@ GNU General Public License for more details.  -->
     &nbsp&nbsp<label><input type="checkbox" id="sc">ShortCircuit</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="ma">Mac Address</label><br>
     &nbsp&nbsp<label><input type="checkbox" id="csf">Channel Super Fun</label><br><br>
+
     <h3 style="padding: 0; margin: 0.3em;">Misc:</h3>
     <b><label><input type="checkbox" id="mbadges">Hide the rank icons in the member profiles</label><br></b>
     <b><label><input type="checkbox" id="mrank">Replace the "Member" with the user's rank</label><br></b>
@@ -45,7 +46,17 @@ GNU General Public License for more details.  -->
     <b><label><input type="checkbox" id="group">Hide member group (Moderator, Administrator, etc)</label><br></b>
     <b><label><input type="checkbox" id="location">Hide the location below member's profiles</label><br></b>
     <b><label><input type="checkbox" id="level">Show your level/rank in the profile dropdown</label><br></b><br>
-    </div><br><br>
+
+    <h3 style="padding: 0; margin: 0.3em;">Forums:</h3>
+    <b><label><input type="checkbox" id="hideofficial">Hide LTT Official forum</label><br></b>
+    <b><label><input type="checkbox" id="moveinfo">Move Forum Information to The Hub</label><br></b>
+    <b><label><input type="checkbox" id="movereleases">Move LTT Releases to The Hub</label><br></b>
+    <b><label><input type="checkbox" id="moveofficial">Move LTT Official below The Hub</label><br></b><br>
+
+    <h3 style="padding: 0; margin: 0.3em;">Advanced:</h3>
+    <b><label><input type="checkbox" id="logging">Enable logging for troubleshooting</label><br></b>
+
+    </div><br>
 
     <div id="container">
     <input type="button" value="Submit" id="submitbutton">
@@ -70,14 +81,9 @@ GNU General Public License for more details.  -->
     font-size: 0.8em;
   }
 
-  #header {
+  /* #header {
     text-align: center;
-  }
-  #version {
-    
-    /* color: #DD6B20; */
-
-  }
+  } */
   #submitbutton {
     -webkit-text-size-adjust: 100%;
     --sp-1: 4px;
@@ -242,8 +248,6 @@ GNU General Public License for more details.  -->
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 100%);
     width: 5em !important;
     height: 2em !important;
-    position: absolute;
-    bottom: 0.4em;
     margin-bottom: 0.4em;
   }
   
@@ -251,7 +255,6 @@ GNU General Public License for more details.  -->
     /* height: 1.7em; */
     position: absolute;
     left: 40%;
-    bottom: 0;
   }
   #version {
     color: #DD6B20;

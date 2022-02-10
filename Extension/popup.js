@@ -30,7 +30,12 @@ function restore_options() {
     rank: false,
     pcount: false,
     soln: false,
-    level: false
+    level: false,
+    hideofficial: false,
+    moveinfo: false,
+    movereleases: false,
+    moveofficial: false,
+    logging: false
   }, function(items) {
     document.getElementById("rtopics").checked = items.rtopics,
     document.getElementById("vids").checked = items.all,
@@ -50,6 +55,11 @@ function restore_options() {
     document.getElementById("replpcount").checked = items.pcount;
     document.getElementById("soln").checked = items.soln;
     document.getElementById("level").checked = items.level;
+    document.getElementById("hideofficial").checked = items.hideofficial;
+    document.getElementById("moveinfo").checked = items.moveinfo;
+    document.getElementById("movereleases").checked = items.movereleases;
+    document.getElementById("moveofficial").checked = items.moveofficial;
+    document.getElementById("logging").checked = items.logging;
 
   });
 }
@@ -86,8 +96,12 @@ function savevalues(){
     rank: document.getElementById("mrank").checked,
     pcount: document.getElementById("replpcount").checked,
     soln: document.getElementById("soln").checked,
-    level: document.getElementById("level").checked
-    
+    level: document.getElementById("level").checked,
+    hideofficial :document.getElementById("hideofficial").checked,
+    moveinfo: document.getElementById("moveinfo").checked,
+    movereleases: document.getElementById("movereleases").checked,
+    moveofficial: document.getElementById("moveofficial").checked,
+    logging: document.getElementById("logging").checked
   });
    submit.value = "Done!"
 }
@@ -105,4 +119,3 @@ function allselect() {
   document.getElementById("csf").checked = x;
 
 }
-
