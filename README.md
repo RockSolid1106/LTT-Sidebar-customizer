@@ -8,16 +8,18 @@ I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
 
 
-## Update v0.8.6 - 19th November, 2021
+## Updated to v0.8.8 on 10th February, 2022
 Changelogs:
 
-#### Profile features
-- You can now replace the title "Member" with the member's rank.
-- You can remove the solutions count.
-- You can now replace the decimal post count with the full post count. Above changes basically bring it to how it looked before the forum upgrade.
+### Forums
+- The LTT Official forum can now be hidden.
+- LTT Official forum can be moved below The Hub.
+- LTT Releases and Forum Information can be moved to The Hub.
 
-#### Misc
-- You can choose to see the rank stats in the profile dropdown, which was only available in the mobile version of the site.
+
+### Advanced[Minor]
+- Added an option to enable logging for troubleshooting. You'll want to keep this turned off unless you're submitting a bug report to screenshot the console.
+
 
 # Installation
 Please visit https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum/, and then Add to Firefox.
