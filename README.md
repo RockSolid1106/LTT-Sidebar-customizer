@@ -5,7 +5,7 @@ A basic Chrome extension to customize the www.linustechtips.com forum.
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
-## Updated to v0.8.8 on 10th Februaru, 2022
+## Updated to v0.8.8 on 10th February, 2022
 Changelogs:
 
 #### Forums
