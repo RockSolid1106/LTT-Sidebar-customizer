@@ -14,18 +14,7 @@ GNU General Public License for more details. */
 
 
 browser.storage.sync.get({
-    rtopics: false,
-    social: false,
-    feat: false,
-    ad: false,
-    ////
-    all: false,
-    ltt: false,
-    tq: false,
-    tl: false,
-    sc: false,
-    ma: false,
-    csf: false,
+    
     ////
     mbadges: false,
     group: false,
@@ -33,169 +22,8 @@ browser.storage.sync.get({
     rank: false,
     pcount: false,
     soln: false,
-    level: false,
-    hideofficial: false,
-    moveinfo: false,
-    movereleases: false,
-    moveofficial: false,
     logging: false
   }, function(items) {
-        if (items.feat==true){
-            try{
-                if (document.querySelector('li[data-blockid="app_forums_topicFeed_yxyq4buu6"]') != null){
-                    document.querySelector('li[data-blockid="app_forums_topicFeed_yxyq4buu6"]').remove()
-                }
-                else if (document.querySelector('li[data-blockid="app_forums_topicFeed_dpltxl1vm"]') != null){
-                    document.querySelector('li[data-blockid="app_forums_topicFeed_dpltxl1vm"]').remove()
-                }
-                else {
-                    document.querySelector('li[data-blockid="app_forums_topicFeed_6pz746tdr"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}  
-
-        }
-
-        
-        if (items.social==true){
-            try{
-            if (document.querySelector('li[data-blockid="app_cms_Blocks_lwnptbsqn"]') != null){
-                document.querySelector('li[data-blockid="app_cms_Blocks_lwnptbsqn"]').remove()
-            }
-            else if(document.querySelector('li[data-blockid="app_cms_Blocks_vygscspy7"]') != null){
-                document.querySelector('li[data-blockid="app_cms_Blocks_vygscspy7"]').remove()
-            }
-            else {
-                document.querySelector('li[data-blockid="app_cms_Blocks_6rae4q53s"]').remove()
-            }
-        }catch(ex){if (items.logging) {console.log(ex)}}  
-
-        }
-        if (items.ad == true){
-
-            try{
-                
-                document.querySelector("div[data-role='sidebarAd']").remove()
-            } catch(ex) {if (items.logging) {console.log(ex)}}
-        }
-        ////////
-
-        if (items.ltt) {
-            try {
-                
-                if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_68iizozle"]') != null){
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_68iizozle"]').remove()
-                }
-                else if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_ssj3ulzf7"]') != null){
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_ssj3ulzf7"]').remove()
-                }
-                else {
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_sl3ntfu2v"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-
-        if (items.tq) {
-            try {
-                
-                if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_1rotwtd2e"]') != null){
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_1rotwtd2e"]').remove()
-                }
-                else if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_769xp3erp"]') != null){
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_769xp3erp"]').remove()
-                }
-                
-                else {
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_zsf5xw7tj"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-
-        if (items.tl) {
-            try {
-                
-                
-                if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_45l4ximfq"]') != null){
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_45l4ximfq"]').remove()
-                }
-                else if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_7bb98gprz"]') != null){
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_7bb98gprz"]').remove()
-                }
-                else {
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_msogh6kit"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-
-        if (items.sc) {
-            try {
-                
-                if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_bgxieil3n"]') != null){
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_bgxieil3n"]').remove()
-                }
-                else if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_psk0aihdo"]') != null){
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_psk0aihdo"]').remove()
-                }
-                else {
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_r40stprfe"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-
-        if (items.ma) {
-            try {
-                
-                if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_tqbpvtghs"]') != null){
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_tqbpvtghs"]').remove()
-                }
-                else if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_1qqbywuuj"]') != null){
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_1qqbywuuj"]').remove()
-                }
-                else {
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_scr82rwww"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-
-        if (items.csf) {
-            try {
-                
-                if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_l3czbd1pn"]') != null){
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_l3czbd1pn"]').remove()
-                }
-                else if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_a6qaogeds"]') != null){
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_a6qaogeds"]').remove()
-                }
-                else {
-                    
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_vfxqo3v1o"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-        if (items.rtopics){
-            try {
-                
-                if (document.querySelector('li[data-blockid="app_forums_topicFeed_23ahwqk21"]') != null){
-                    document.querySelector('li[data-blockid="app_forums_topicFeed_23ahwqk21"]').remove();
-                }
-                else if (document.querySelector('li[data-blockid="app_forums_topicFeed_ji9lftwoj"]') != null){
-                    document.querySelector('li[data-blockid="app_forums_topicFeed_ji9lftwoj"]').remove()
-                }
-                else {
-                    document.querySelector('li[data-blockid="app_forums_topicFeed_zhgehlj5q"]').remove()
-                }
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
 
         if (items.group){
             try{
@@ -244,9 +72,7 @@ browser.storage.sync.get({
                     let posts = panel.querySelectorAll('.ipsType_blendLinks')
                     
                     try {
-                    if (items.soln){ if(posts[1])posts[1].parentElement.remove(); posts[0].innerText = posts[0].getAttribute("title"); } else{ 
-
-                        posts[0].innerHTML = '<i class="fa fa-comment"></i> '+ (posts[0].getAttribute("title")).replace(" posts", "")}
+                    if (items.soln){if(posts[1])posts[1].parentElement.remove();posts[0].innerText = posts[0].getAttribute("title");}else{posts[0].innerHTML = '<i class="fa fa-comment"></i> '+ posts[0].getAttribute("title").replace(" posts", "");}
                     }catch(ex){if (items.logging) {console.log(ex)}}
                 })
             }catch(ex){if (items.logging) {console.log(ex)}}
@@ -257,38 +83,6 @@ browser.storage.sync.get({
                 let posts = panel.querySelectorAll('.ipsType_blendLinks')
                 if (items.soln){if(posts[1])posts[1].parentElement.remove();}
             }
-        }
-
-        if (items.level){
-            try {
-                let x = $('.lmgNav_constrainedMenu').contents().filter(function(){return this.nodeType === 8;})[1];
-                $(x).replaceWith(x.nodeValue);
-                $('.lmgNav_constrainedMenu').children(".ipsPadding").addClass("ipsBorder_bottom")
-            }catch(ex){console.log(ex)}
-        }
-        if (items.moveofficial){
-            try {
-                document.querySelector('[data-categoryid="80"]').parentNode.insertBefore(document.querySelector('[data-categoryid="99"]'), document.querySelector('[data-categoryid="80"]').nextSibling);
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-        if (items.movereleases){
-            try {
-                var a = document.querySelector('[data-categoryid="99"]').querySelector('li[data-forumid="17"]')
-                document.querySelector('[data-categoryid="80"]').querySelector('[data-role="forums"]').innerHTML += a.outerHTML
-                a.remove()
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-        if (items.moveinfo){
-            try {
-                var a = document.querySelector('[data-categoryid="99"]').querySelector('li[data-forumid="23"]')
-                document.querySelector('[data-categoryid="80"]').querySelector('[data-role="forums"]').innerHTML += a.outerHTML
-                a.remove()
-            }catch(ex){if (items.logging) {console.log(ex)}}
-        }
-        if (items.hideofficial){
-            try {
-                document.querySelector('[data-categoryid="99"]').remove()
-            }catch(ex){if (items.logging) {console.log(ex)}}
         }
 
 
