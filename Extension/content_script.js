@@ -199,7 +199,7 @@ browser.storage.sync.get({
 
         if (items.group){
             try{
-                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerText != "Member" && e.innerText != 'Floatplane Staff' && e.innerText != 'Folding Team Leader' && e.innerText != 'Industry Affiliate' && e.innerText != 'Newbie' && e.innerText != 'Rookie' && e.innerText != 'Apprentice' && e.innerText != 'Contributor' && e.innerText != 'Explorer' && e.innerText != 'Enthusiast' && e.innerText != 'Collaborator' && e.innerText != 'Community Regular' && e.innerText != 'Rising Star' && e.innerText != 'Proficient' && e.innerText != 'Experienced' && e.innerText != 'Mentor' && e.innerText != 'Veteran' && e.innerText != 'Grand Master' )
+                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerText != "Retired Staff" && e.innerText != "Member" && e.innerText != 'Floatplane Staff' && e.innerText != 'Folding Team Leader' && e.innerText != 'Industry Affiliate' && e.innerText != 'Newbie' && e.innerText != 'Rookie' && e.innerText != 'Apprentice' && e.innerText != 'Contributor' && e.innerText != 'Explorer' && e.innerText != 'Enthusiast' && e.innerText != 'Collaborator' && e.innerText != 'Community Regular' && e.innerText != 'Rising Star' && e.innerText != 'Proficient' && e.innerText != 'Experienced' && e.innerText != 'Mentor' && e.innerText != 'Veteran' && e.innerText != 'Grand Master' )
                 {e.remove()
                 }
                 })
