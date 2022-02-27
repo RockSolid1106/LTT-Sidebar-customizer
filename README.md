@@ -5,7 +5,7 @@ A basic Chrome extension to customize the www.linustechtips.com forum.
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
-## Updated to v0.8.9 on 27th February, 2022
+## Updated to v0.9.0 on 27th February, 2022
 Changelogs:
 - ***The script now also runs when the page on the thread is changed, or new replies have come in.***
 
