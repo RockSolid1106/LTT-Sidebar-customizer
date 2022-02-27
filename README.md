@@ -5,17 +5,20 @@ A basic Chrome extension to customize the www.linustechtips.com forum.
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
-## Updated to v0.8.8 on 10th February, 2022
+## Updated to v0.8.9 on 27th February, 2022
 Changelogs:
+- ***The script now also runs when the page on the thread is changed, or new replies have come in.***
 
-#### Forums
-- The LTT Official forum can now be hidden.
-- LTT Official forum can be moved below The Hub.
-- LTT Releases and Forum Information can be moved to The Hub.
+- Post count will now have the icon to match the forum theme. This only applies if you don't hide solutions count.
+- Example:
 
+ ![image](https://user-images.githubusercontent.com/84492239/155879565-8fc528c0-4f72-4506-b400-4aae5e2047f4.png)
+instead of
+  ![image](https://user-images.githubusercontent.com/84492239/155879570-435d1929-c58f-4561-8285-821bfc3eae2c.png)
 
-#### Advanced[Minor]
-- Added an option to enable logging for troubleshooting. You'll want to keep this turned off unless you're submitting a bug report to screenshot the console.
+- Changed the "Hide location" option to "Show location". If you update the extension, the option will remain the same, so you'll have to manually change it after you've updated.
+- [Minor] Added "Industry Affiliates" as an exception to remove the group name. This was previously being hidden.
+- Minor bug fixes.
 
 
 
