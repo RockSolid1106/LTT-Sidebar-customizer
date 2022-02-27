@@ -8,7 +8,7 @@ I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
 
 
-## Updated to v0.8.9 on 27th February, 2022
+## Updated to v0.9.0 on 27th February, 2022
 Changelogs:
 - ***The script now also runs when the page on the thread is changed, or new replies have come in.***
 
