@@ -20,7 +20,7 @@ instead of
   ![image](https://user-images.githubusercontent.com/84492239/155879570-435d1929-c58f-4561-8285-821bfc3eae2c.png)
 
 - Changed the "Hide location" option to "Show location". If you update the extension, the option will remain the same, so you'll have to manually change it after you've updated.
-- [Minor] Added "Industry Affiliates" as an exception to remove the group name. This was previously being hidden.
+- [Minor] Added "Industry Affiliates" and "Retired Staff" as an exception to remove the group name. This was previously being hidden.
 - Minor bug fixes.
 
 
