@@ -17,7 +17,7 @@ instead of
   ![image](https://user-images.githubusercontent.com/84492239/155879570-435d1929-c58f-4561-8285-821bfc3eae2c.png)
 
 - Changed the "Hide location" option to "Show location". If you update the extension, the option will remain the same, so you'll have to manually change it after you've updated.
-- [Minor] Added "Industry Affiliates" as an exception to remove the group name. This was previously being hidden.
+- [Minor] Added "Industry Affiliates" and "Retired Staff" as an exception to remove the group name. This was previously being hidden.
 - Minor bug fixes.
 
 
@@ -36,24 +36,13 @@ Just go to https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-for
 
 
 # Installation and Setup for Chromium-based browsers
+This extension is also available on the Chrome Webstore.
+https://chrome.google.com/webstore/detail/ltt-sidebar-customizer/dcenpocomeaiachcnhogmecpalnobpcb
+![image](https://user-images.githubusercontent.com/84492239/160624058-e80ba855-86cc-4490-8cbc-8ad19204c3e9.png)
 
-1. Download the code, and extract the .zip file.
-2. Open Chrome, and navigate to chrome://extensions.
-3. On the top right, enable developer mode.
 
-![image](https://user-images.githubusercontent.com/84492239/138812513-55392678-fa16-4104-8a7b-c9db8c5ec8bf.png)
 
-4. On the top left, click "Load unpacked".
-
-![image](https://user-images.githubusercontent.com/84492239/138812532-dcec8e73-5496-4008-9737-0e1018e01b74.png)
-
-5. Then, navigate to the the folder you extracted, and inside the folder, select the "Extension" folder. Let it load the extension.
-
-![image](https://user-images.githubusercontent.com/84492239/138812632-2890408f-e1d9-432b-938e-37378d7c567b.png)
-
-6. That's it for the installation part. Move over to Customization section. [Customizing the bar](https://github.com/RockSolid1106/LTT-Sidebar-customizer#customizing-the-bar)
-
-# Customizing the bar
+# Settings
 1. Navigate to chrome://extensions(or edge://extensions). Now, click "Details" under the extension you just added.
 
 ![image](https://user-images.githubusercontent.com/84492239/138812790-72d753bc-c6c4-4a73-868c-a7b3d76129a8.png)
