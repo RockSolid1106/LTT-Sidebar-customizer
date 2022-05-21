@@ -1,4 +1,4 @@
-<!-- Copyright © 2021  RockSolid1106
+<!-- Copyright © 2022  RockSolid1106
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -12,451 +12,92 @@ GNU General Public License for more details.  -->
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
     
   </head>
   <body>
     <div id="header"> 
-    <span id="title"><img id="logoimage" style="height: 0.8em" src="images/logo2.png"> Sidebar Customizer</span><br>
-    <span id="version"></span><br>
+    <span id="title"><img id="logoimage" style="width: 0.8em" src="images/logo2.png"> Sidebar Customizer</span><br>
+    <span id="version"></span><br><br>
    </div>
 
-    <div>
-    <span style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Sidebar options:</span><br>
-    <label><input type="checkbox" id="ad">Hide Ad</label><br>
-    <label><input type="checkbox" id="rtopics">Hide Recent Topics</label><br>
-    <label><input type="checkbox" id="featured">Hide the Featured Topics section</label><br>
-    <label><input type="checkbox" id="social">Hide LMG Social Links(Discord, LTT merch, etc.)</label><br>
-    <label><input type="checkbox" id="vids">Hide All Recent LMG Videos</label><br>
-    &nbsp&nbsp<label><input type="checkbox" id="ltt">Linus Tech Tips</label><br>
-    &nbsp&nbsp<label><input type="checkbox" id="tq">TechQuickie</label><br>
-    &nbsp&nbsp<label><input type="checkbox" id="tl">TechLinked</label><br>
-    &nbsp&nbsp<label><input type="checkbox" id="sc">ShortCircuit</label><br>
-    &nbsp&nbsp<label><input type="checkbox" id="ma">Mac Address</label><br>
-    &nbsp&nbsp<label><input type="checkbox" id="csf">Channel Super Fun</label><br><br>
-    <span style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Misc:</span><br>
-    <label><input type="checkbox" id="mbadges">Hide the rank icons in the member profiles</label><br>
-    <label><input type="checkbox" id="mrank">Replace the "Member" with the user's rank</label><br>
-    <label><input type="checkbox" id="replpcount">Replace the post count with complete post count</label><br>
-    <label><input type="checkbox" id="soln">Remove the solutions count</label><br>
-    <label><input type="checkbox" id="group">Hide member group (Moderator, Administrator, etc)</label><br>
-    <label><input type="checkbox" id="location">Show the location below member's profiles</label><br>
-    <label><input type="checkbox" id="level">Show your level/rank in the profile dropdown</label><br><br>
- 
+    <div class="menu-placeholder">
+      <div class="main-menu menus" id="main-menu">
+        <div class="menu-buttons">
+          <button type="button" id="sidebar-button">Sidebar</button>
+          <button type="button" id="profile-button">Profile</button>
+          <button type="button" id="forums-button">Forums</button>
+          <button type="button" id="advanced-button">Advanced Options</button>
+        </div>
+      </div>
+      <div class="menus menu-sidebar" id="menu-sidebar">
+        <span class="menu-heading">Sidebar options:</span><br>
+        <label><input type="checkbox" id="ad">Hide Ad</label><br>
+        <label><input type="checkbox" id="rtopics">Hide Recent Topics</label><br>
+        <label><input type="checkbox" id="featured">Hide the Featured Topics section</label><br>
+        <label><input type="checkbox" id="social">Hide LMG Social Links(Discord, LTT merch, etc.)</label><br>
+        <label><input type="checkbox" id="vids">Hide All Recent LMG Videos</label><br>
+        <div class="sub-menu">
+          <label><input type="checkbox" id="ltt">Linus Tech Tips</label><br>
+          <label><input type="checkbox" id="tq">TechQuickie</label><br>
+          <label><input type="checkbox" id="tl">TechLinked</label><br>
+          <label><input type="checkbox" id="sc">ShortCircuit</label><br>
+          <label><input type="checkbox" id="ma">Mac Address</label><br>
+          <label><input type="checkbox" id="csf">Channel Super Fun</label>
+          <br><br>
+        </div>
+        <label><input type="checkbox" id="allstatus">Show Status Updates on all pages</label><br>
 
-    <span style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Forums:</span><br>
-    <label><input type="checkbox" id="hideofficial">Hide LTT Official forum</label><br>
-    <label><input type="checkbox" id="moveinfo">Move Forum Information to The Hub</label><br>
-    <label><input type="checkbox" id="movereleases">Move LTT Releases to The Hub</label><br>
-    <label><input type="checkbox" id="moveofficial">Move LTT Official below The Hub</label><br><br>
+        <br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
 
-    <span style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Advanced:</span><br>
-    <label><input type="checkbox" id="logging">Enable logging for troubleshooting</label><br>
+      </div>
+
+      <div class="menus menu-profiles" id="menu-profiles">
+        <span class="menu-heading">Profiles:</span><br>
+        <label><input type="checkbox" id="mbadges">Hide the rank icons in the member profiles</label><br>
+        <label><input type="checkbox" id="mrank">Replace the "Member" with the user's rank</label><br>
+        <label><input type="checkbox" id="replpcount">Replace the post count with complete post count</label><br>
+        <label><input type="checkbox" id="soln">Remove the solutions count</label><br>
+        <label><input type="checkbox" id="group">Hide member group (Moderator, Administrator, etc)</label><br>
+        <label><input type="checkbox" id="location">Show the location below member's profiles</label><br>
+        <label><input type="checkbox" id="level">Show your level/rank in the profile dropdown</label><br>
+        <label><input type="checkbox" id="badgemargin">Set margin on rank badges to 3px on all sides(Recommended)</label>
+        <br><br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
+
+
+      </div>
+      <div class="menus menu-forums" id="menu-forums">
+        <span class="menu-heading">Forums:</span><br>
+        <label><input type="checkbox" id="hideofficial">Hide LTT Official forum</label><br>
+        <label><input type="checkbox" id="moveinfo">Move Forum Information to The Hub</label><br>
+        <label><input type="checkbox" id="movereleases">Move LTT Releases to The Hub</label><br>
+        <label><input type="checkbox" id="moveofficial">Move LTT Official below The Hub</label>
+        <br><br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
+
+
+      </div>
+
+      <div class="menus menu-advanced" id="menu-advanced">
+        <span class="menu-heading">Advanced:</span><br>
+        <label><input type="checkbox" id="logging">Enable logging for troubleshooting</label><br>
+        <br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
+
+
+      </div>
 
     </div><br>
 
-    <center><input type="button" value="Submit" id="submitbutton"></center>
     <script src="popup.js"></script>
+    <link rel="stylesheet" href="button.css">
+
   </body>
 </html>
 <style>
-@media screen and (min-width: 500px)
-  {
-  html {
-    background-color: #1D1D1D;
-    margin: 1em;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 0;
-  }
-  body{
-    color: rgb(195, 195, 195);
-    
-  }
-  #header {
-    text-align: center;
-  }
-  #logoimage {
-    height: 0.8em !important;
-  }
-  #title {
-    font-size: 5em;
-  }
 
-  #submitbutton {
-    -webkit-text-size-adjust: 100%;
-    --sp-1: 4px;
-    --sp-2: 8px;
-    --sp-3: 12px;
-    --sp-4: 16px;
-    --sp-5: 20px;
-    --sp-6: 24px;
-    --sp-7: 32px;
-    --sp-8: 40px;
-    --sp-9: 48px;
-    --sp-10: 64px;
-    --radius-1: 4px;
-    --radius-2: 8px;
-    --border-1px: 1px solid rgba( var(--theme-text_light), 0.25 );
-    --positive-dark: #2C8C69;
-    --negative-dark: #C53030;
-    --negative-light: #FFF5F5;
-    --intermediate-dark: #DD6B20;
-    --informational-dark: #2981bf;
-    --informational-light: #e9f0f5;
-    --general-light: #f0f4f8;
-    --box--boxShadow: 0px 2px 4px -1px rgba( var(--theme-area_background_dark), 0.1 );
-    --box--backgroundColor: rgb( var(--theme-area_background_reset) );
-    --box--radius: var(--radius-1);
-    --solved--borderColor: 44, 140, 105;
-    --popup--radius: var(--radius-1);
-    --header--height: 80px;
-    --responsive-header--height: 55px;
-    --logo--height: 70%;
-    --responsive-logo--height: var(--logo--height);
-    --primary-navigation--height: 52px;
-    --secondary-navigation--height: 50px;
-    --form-field--radius: var(--radius-1);
-    --form-field--borderColor: rgba( var(--theme-text_light), 0.3 );
-    --form-field--borderHoverColor: rgba( var(--theme-text_light), 0.5 );
-    --form-field--focusShadow: unset;
-    --button--radius: var(--radius-1);
-    --trophy-first--background: #fac746;
-    --trophy-first--color: #704926;
-    --trophy-second--background: #c0c0c0;
-    --trophy-third--background: #cd7f32;
-    --container--width: 1640px;
-    --minimal_container--width: 1000px;
-    --lmg-nav--height: 45px;
-    --theme-alternate_button_font: 255, 255, 255;
-    --theme-button_bar: 255, 255, 255;
-    --theme-featured: 44, 140, 105;
-    --theme-header: 255, 255, 255;
-    --theme-main_nav_font: 255, 255, 255;
-    --theme-main_nav_tab: 255, 255, 255;
-    --theme-mobile_back: 232, 233, 235;
-    --theme-mobile_back_font: 53, 60, 65;
-    --theme-moderated_text_light: 164, 118, 143;
-    --theme-pagination_active: 62, 65, 72;
-    --theme-poll_bar: 61, 101, 148;
-    --theme-post_highlight: 253, 245, 231;
-    --theme-post_highlight_border: 129, 98, 46;
-    --theme-price: 182, 63, 63;
-    --theme-rating_hover: 61, 101, 148;
-    --theme-rating_on: 255, 152, 0;
-    --theme-secondary_title: 235, 237, 240;
-    --theme-secondary_title_font: 130, 142, 153;
-    --theme-section_title: 255, 255, 255;
-    --theme-selected_border: 23, 126, 201;
-    --theme-step_background: 61, 101, 148;
-    --theme-subscription_active_color: 61, 101, 148;
-    --theme-trophy_first: 250, 199, 70;
-    --theme-trophy_first_font: 112, 73, 38;
-    --theme-trophy_second: 192, 192, 192;
-    --theme-trophy_third: 205, 127, 50;
-    --lmg-ips-blue: 48, 132, 196;
-    --lmg-orange-1: 219, 65, 5;
-    --lmg-orange-2: 187, 54, 2;
-    --theme-tab_background: 51, 51, 51;
-    --theme-link_hover: var(--lmg-orange-1);
-    --theme-main_nav_tab_font: 255, 255, 255;
-    --theme-normal_button: 82, 82, 82;
-    --theme-normal_button_font: 255, 255, 255;
-    --theme-alternate_button: var(--lmg-ips-blue);
-    --theme-link_button: var(--theme-text_color);
-    --theme-widget_title_bar: transparent;
-    --theme-profile_header: 51, 51, 51;
-    --theme-notification_bubble: var(--lmg-orange-1);
-    --theme-main_nav: 51, 51, 51;
-    --theme-mentions: var(--lmg-orange-1);
-    --theme-tag_font: 255, 255, 255;
-    --theme-tag_remove: var(--theme-text_color);
-    --theme-tag_remove_bg: var(--theme-area_background_reset);
-    --theme-prefix: var(--theme-tag);
-    --item-timeline--boxShadow: 0 0 0 4px rgb( var(--theme-page_background) );
-    --lmg-dark-orange: 150, 42, 0;
-    --lmg-dark-blue: 36, 96, 142;
-    --lmg-light-orange: 250, 103, 45;
-    --theme-brand_primary: var(--lmg-dark-orange);
-    --theme-area_background: 42, 42, 42;
-    --theme-area_background_reset: 29, 29, 29;
-    --theme-area_background_light: 35, 35, 35;
-    --theme-area_background_dark: 51, 51, 51;
-    --theme-area_background_extra_light: 20, 20, 20;
-    --theme-page_background: 8, 8, 8;
-    --theme-text_color: 195, 195, 195;
-    --theme-text_dark: 208, 208, 208;
-    --theme-text_light: 136, 136, 136;
-    --theme-link: 208, 208, 208;
-    --theme-widget_title_font: 208, 208, 208;
-    --theme-section_title_font: 208, 208, 208;
-    --theme-footer_text: 195, 195, 195;
-    --theme-header_text: 195, 195, 195;
-    --theme-blend_links_hover_brightness: 1.2;
-    --theme-moderated: 42, 24, 31;
-    --theme-moderated_light: 42, 24, 31;
-    --theme-moderated_text: 198, 156, 178;
-    --theme-selected: 33, 47, 55;
-    --theme-active_input_border: var(--lmg-dark-orange);
-    --theme-item_status: 195, 195, 195;
-    --theme-light_button: 50, 50, 50;
-    --theme-light_button_font: var(--theme-text_color);
-    --theme-very_light_button: 40, 40, 40;
-    --theme-very_light_button_font: var(--theme-text_color);
-    --theme-important_button: var(--lmg-dark-orange);
-    --theme-important_button_font: 255, 255, 255;
-    --theme-primary_button: var(--lmg-dark-orange);
-    --theme-primary_button_font: 255, 255, 255;
-    --theme-comment_button_badge: 68, 68, 68;
-    --theme-comment_button_badge_hover: 85, 85, 85;
-    --theme-comment_count: 50, 50, 50;
-    --theme-comment_count_font: var(--theme-text_color);
-    --theme-tag: 60, 60, 60;
-    --theme-timeline_color: 35, 35, 35;
-    --theme-quote_background: 20, 20, 20;
-    --intermediate-light: #42230c;
-    --positive-light: #0e291e;
-    --general-dark: #484c51;
-    --popup--border: 1px solid rgba(var(--theme-area_background_dark), 1);
-    --popup--boxShadow: 0 8px 50px rgba(0, 0, 0, 0.2), 0px 4px 15px rgba(00, 0, 0, 0.1), 0px 0px 8px rgba(100, 100, 100, 0.15);
-    --dialog--boxShadow: 0px 5px 55px rgba(0, 0, 0, 0.4), 0px 7px 24px -12px rgba(0, 0, 0, 0.7);
-    list-style: none;
-    box-sizing: border-box;
-    margin: 0;
-    overflow: visible;
-    -webkit-appearance: button;
-    font-family: inherit;
-    line-height: inherit;
-    font-size: 3em;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding: 4px;
-    position: inline-block;
-    border-radius: var(--button--radius);
-    border: 1px solid transparent;
-    transition: 0.1s all linear;
-    cursor: pointer;
-    user-select: none;
-    font-weight: 500;
-    background: rgb( var(--theme-primary_button) );
-    color: rgb( var(--theme-primary_button_font) );
-    text-transform: uppercase;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 100%);
-    width: 10em !important;
-    height: 1.5em !important;
-    margin-bottom: 0.4em;
-  }
-  
-
-  #version {
-    color: #DD6B20;
-  }}
-
-
-
-
-
-  @media screen and (max-width: 410px)
-  {
-  html {
-    background-color: #1D1D1D;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 0;
-  }
-  body{
-    color: rgb(195, 195, 195);
-  }
-  #header{
-    text-align: center;
-  }
-  #title {
-    
-    font-size: 1.5em;
-  }
-  #logoimage {
-    height: 0.8em !important;
-  }
-  #submitbutton {
-    -webkit-text-size-adjust: 100%;
-    --sp-1: 4px;
-    --sp-2: 8px;
-    --sp-3: 12px;
-    --sp-4: 16px;
-    --sp-5: 20px;
-    --sp-6: 24px;
-    --sp-7: 32px;
-    --sp-8: 40px;
-    --sp-9: 48px;
-    --sp-10: 64px;
-    --radius-1: 4px;
-    --radius-2: 8px;
-    --border-1px: 1px solid rgba( var(--theme-text_light), 0.25 );
-    --positive-dark: #2C8C69;
-    --negative-dark: #C53030;
-    --negative-light: #FFF5F5;
-    --intermediate-dark: #DD6B20;
-    --informational-dark: #2981bf;
-    --informational-light: #e9f0f5;
-    --general-light: #f0f4f8;
-    --box--boxShadow: 0px 2px 4px -1px rgba( var(--theme-area_background_dark), 0.1 );
-    --box--backgroundColor: rgb( var(--theme-area_background_reset) );
-    --box--radius: var(--radius-1);
-    --solved--borderColor: 44, 140, 105;
-    --popup--radius: var(--radius-1);
-    --header--height: 80px;
-    --responsive-header--height: 55px;
-    --logo--height: 70%;
-    --responsive-logo--height: var(--logo--height);
-    --primary-navigation--height: 52px;
-    --secondary-navigation--height: 50px;
-    --form-field--radius: var(--radius-1);
-    --form-field--borderColor: rgba( var(--theme-text_light), 0.3 );
-    --form-field--borderHoverColor: rgba( var(--theme-text_light), 0.5 );
-    --form-field--focusShadow: unset;
-    --button--radius: var(--radius-1);
-    --trophy-first--background: #fac746;
-    --trophy-first--color: #704926;
-    --trophy-second--background: #c0c0c0;
-    --trophy-third--background: #cd7f32;
-    --container--width: 1640px;
-    --minimal_container--width: 1000px;
-    --lmg-nav--height: 45px;
-    --theme-alternate_button_font: 255, 255, 255;
-    --theme-button_bar: 255, 255, 255;
-    --theme-featured: 44, 140, 105;
-    --theme-header: 255, 255, 255;
-    --theme-main_nav_font: 255, 255, 255;
-    --theme-main_nav_tab: 255, 255, 255;
-    --theme-mobile_back: 232, 233, 235;
-    --theme-mobile_back_font: 53, 60, 65;
-    --theme-moderated_text_light: 164, 118, 143;
-    --theme-pagination_active: 62, 65, 72;
-    --theme-poll_bar: 61, 101, 148;
-    --theme-post_highlight: 253, 245, 231;
-    --theme-post_highlight_border: 129, 98, 46;
-    --theme-price: 182, 63, 63;
-    --theme-rating_hover: 61, 101, 148;
-    --theme-rating_on: 255, 152, 0;
-    --theme-secondary_title: 235, 237, 240;
-    --theme-secondary_title_font: 130, 142, 153;
-    --theme-section_title: 255, 255, 255;
-    --theme-selected_border: 23, 126, 201;
-    --theme-step_background: 61, 101, 148;
-    --theme-subscription_active_color: 61, 101, 148;
-    --theme-trophy_first: 250, 199, 70;
-    --theme-trophy_first_font: 112, 73, 38;
-    --theme-trophy_second: 192, 192, 192;
-    --theme-trophy_third: 205, 127, 50;
-    --lmg-ips-blue: 48, 132, 196;
-    --lmg-orange-1: 219, 65, 5;
-    --lmg-orange-2: 187, 54, 2;
-    --theme-tab_background: 51, 51, 51;
-    --theme-link_hover: var(--lmg-orange-1);
-    --theme-main_nav_tab_font: 255, 255, 255;
-    --theme-normal_button: 82, 82, 82;
-    --theme-normal_button_font: 255, 255, 255;
-    --theme-alternate_button: var(--lmg-ips-blue);
-    --theme-link_button: var(--theme-text_color);
-    --theme-widget_title_bar: transparent;
-    --theme-profile_header: 51, 51, 51;
-    --theme-notification_bubble: var(--lmg-orange-1);
-    --theme-main_nav: 51, 51, 51;
-    --theme-mentions: var(--lmg-orange-1);
-    --theme-tag_font: 255, 255, 255;
-    --theme-tag_remove: var(--theme-text_color);
-    --theme-tag_remove_bg: var(--theme-area_background_reset);
-    --theme-prefix: var(--theme-tag);
-    --item-timeline--boxShadow: 0 0 0 4px rgb( var(--theme-page_background) );
-    --lmg-dark-orange: 150, 42, 0;
-    --lmg-dark-blue: 36, 96, 142;
-    --lmg-light-orange: 250, 103, 45;
-    --theme-brand_primary: var(--lmg-dark-orange);
-    --theme-area_background: 42, 42, 42;
-    --theme-area_background_reset: 29, 29, 29;
-    --theme-area_background_light: 35, 35, 35;
-    --theme-area_background_dark: 51, 51, 51;
-    --theme-area_background_extra_light: 20, 20, 20;
-    --theme-page_background: 8, 8, 8;
-    --theme-text_color: 195, 195, 195;
-    --theme-text_dark: 208, 208, 208;
-    --theme-text_light: 136, 136, 136;
-    --theme-link: 208, 208, 208;
-    --theme-widget_title_font: 208, 208, 208;
-    --theme-section_title_font: 208, 208, 208;
-    --theme-footer_text: 195, 195, 195;
-    --theme-header_text: 195, 195, 195;
-    --theme-blend_links_hover_brightness: 1.2;
-    --theme-moderated: 42, 24, 31;
-    --theme-moderated_light: 42, 24, 31;
-    --theme-moderated_text: 198, 156, 178;
-    --theme-selected: 33, 47, 55;
-    --theme-active_input_border: var(--lmg-dark-orange);
-    --theme-item_status: 195, 195, 195;
-    --theme-light_button: 50, 50, 50;
-    --theme-light_button_font: var(--theme-text_color);
-    --theme-very_light_button: 40, 40, 40;
-    --theme-very_light_button_font: var(--theme-text_color);
-    --theme-important_button: var(--lmg-dark-orange);
-    --theme-important_button_font: 255, 255, 255;
-    --theme-primary_button: var(--lmg-dark-orange);
-    --theme-primary_button_font: 255, 255, 255;
-    --theme-comment_button_badge: 68, 68, 68;
-    --theme-comment_button_badge_hover: 85, 85, 85;
-    --theme-comment_count: 50, 50, 50;
-    --theme-comment_count_font: var(--theme-text_color);
-    --theme-tag: 60, 60, 60;
-    --theme-timeline_color: 35, 35, 35;
-    --theme-quote_background: 20, 20, 20;
-    --intermediate-light: #42230c;
-    --positive-light: #0e291e;
-    --general-dark: #484c51;
-    --popup--border: 1px solid rgba(var(--theme-area_background_dark), 1);
-    --popup--boxShadow: 0 8px 50px rgba(0, 0, 0, 0.2), 0px 4px 15px rgba(00, 0, 0, 0.1), 0px 0px 8px rgba(100, 100, 100, 0.15);
-    --dialog--boxShadow: 0px 5px 55px rgba(0, 0, 0, 0.4), 0px 7px 24px -12px rgba(0, 0, 0, 0.7);
-    list-style: none;
-    box-sizing: border-box;
-    margin: 0;
-    overflow: visible;
-    -webkit-appearance: button;
-    font-family: inherit;
-    line-height: inherit;
-    font-size: 1em;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding: auto;
-    position: inline-block;
-    border-radius: var(--button--radius);
-    border: 1px solid transparent;
-    transition: 0.1s all linear;
-    cursor: pointer;
-    user-select: none;
-    font-weight: 500;
-    background: rgb( var(--theme-primary_button) );
-    color: rgb( var(--theme-primary_button_font) );
-    text-transform: uppercase;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 100%);
-    width: 5em !important;
-    height: 1.5em !important;
-    margin-bottom: 0.4em;
-  }
-  
-
-  #version {
-    font-size: 0.9em;
-    color: #DD6B20;
-  }}
 </style>

@@ -1,5 +1,5 @@
 /* This Chrome extension easily allows you to customize what is shown on the sidebar on the LTT Forum.
-Copyright © 2021  RockSolid1106
+Copyright © 2022  RockSolid1106
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -22,7 +22,8 @@ browser.storage.sync.get({
     rank: false,
     pcount: false,
     soln: false,
-    logging: false
+    logging: false,
+    badgemargin: false
   }, function(items) {
 
         if (items.group){
@@ -31,7 +32,7 @@ browser.storage.sync.get({
                 {e.remove()
                 }
                 })
-            }catch(ex){if (items.logging) {console.log(ex)}}
+            }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
 
 
@@ -46,16 +47,16 @@ browser.storage.sync.get({
                     if (e.innerText == "Member"){
                     ranktext.innerHTML = badge.getAttribute("title").replace(/\(\d+\/\d+\)/, "").replace(/Title:/, "");
                     }
-                }catch(ex){if (items.logging) {console.log(ex)}}
+                }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
                     
                   })
-            }catch(ex){if (items.logging) {console.log(ex)}}
+            }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
 
         if (items.mbadges){
             try{
                 document.querySelectorAll('.cAuthorPane_badge--rank').forEach(e => {e.remove()})
-            }catch(ex){if (items.logging) {console.log(ex)}}
+            }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
 
         if (items.location){
@@ -63,7 +64,7 @@ browser.storage.sync.get({
                 $('aside ul').contents()
                 .filter(function(){return this.nodeType === 8;}) //get the comments
                 .replaceWith(function(){return this.data;})
-            }catch(ex){if (items.logging) {console.log(ex)}}
+            }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
 
         if (items.pcount){
@@ -73,9 +74,9 @@ browser.storage.sync.get({
                     
                     try {
                     if (items.soln){if(posts[1])posts[1].parentElement.remove();posts[0].innerText = posts[0].getAttribute("title");}else{posts[0].innerHTML = '<i class="fa fa-comment"></i> '+ posts[0].getAttribute("title").replace(" posts", "");}
-                    }catch(ex){if (items.logging) {console.log(ex)}}
+                    }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
                 })
-            }catch(ex){if (items.logging) {console.log(ex)}}
+            }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
 
         if (!items.pcount){
@@ -86,7 +87,9 @@ browser.storage.sync.get({
         }
 
 
-        document.querySelectorAll(".cAuthorGroupIcon").forEach(e => {e.style.margin = "3px"})
+        if (items.badgemargin){
+            document.querySelectorAll(".cAuthorGroupIcon").forEach(e => {e.style.margin = "3px"; console.log("badges")})
+            }
 
 
 
