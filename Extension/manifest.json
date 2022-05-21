@@ -3,9 +3,7 @@
   "description": "A very basic extension to customize what is shown on the sidebar on linustechtips.com",
   "version": "0.9.1",
   "manifest_version": 2,
-
   "options_ui": {
-    
   "page": "popup.html",
   "open_in_tab": false
   },
@@ -19,11 +17,11 @@
   "content_scripts": [
     {
         "matches": ["https://linustechtips.com/*"],
-        "js": ["/content_script.js"]
+        "js": ["/content_script.js", "jquery-3.6.0.min.js"]
     }
 ],
 "background": {
-  "scripts": ["background.js"]
+  "scripts": ["background.js", "jquery-3.6.0.min.js"]
 },
 "browser_specific_settings": {
   "gecko": {
@@ -31,5 +29,4 @@
     "strict_min_version": "42.0"
   }
 }
-
 }
