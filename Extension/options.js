@@ -10,6 +10,12 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details. 
 
+
+
+// DO NOT USE THIS FILE, WILL BE PHASED OUT WITH FUTURE UPDATES
+
+
+
 function restore_options() {
   document.getElementById("version").innerHTML = "Version: v" + chrome.runtime.getManifest().version;
   chrome.storage.sync.get({

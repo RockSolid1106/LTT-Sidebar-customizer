@@ -1,4 +1,4 @@
-// Copyright © 2021  RockSolid106
+// Copyright © 2022  RockSolid1106
 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -9,9 +9,8 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details. 
-
 function restore_options() {
-  document.getElementById("version").innerHTML = "Version: v" + chrome.runtime.getManifest().version;
+  document.getElementById("version").innerText = "Version: v" + chrome.runtime.getManifest().version;
   chrome.storage.sync.get({
     rtopics: false,
     social: false,
@@ -35,7 +34,9 @@ function restore_options() {
     moveinfo: false,
     movereleases: false,
     moveofficial: false,
-    logging: false
+    logging: false,
+    allstatus: false,
+    badgemargin: true
   }, function(items) {
     document.getElementById("rtopics").checked = items.rtopics,
     document.getElementById("vids").checked = items.all,
@@ -60,15 +61,16 @@ function restore_options() {
     document.getElementById("movereleases").checked = items.movereleases;
     document.getElementById("moveofficial").checked = items.moveofficial;
     document.getElementById("logging").checked = items.logging;
+    document.getElementById("allstatus").checked = items.allstatus;
+    document.getElementById("badgemargin").checked = items.badgemargin;
 
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
 
 
-var submit = document.getElementById("submitbutton");
-submit.addEventListener("click", savevalues);
 
+Array.from(document.getElementsByClassName("submitbutton")).forEach((e) => {e.addEventListener("click", savevalues)})
 
 function savevalues(){
   if (document.getElementById("ltt").checked && document.getElementById("tq").checked && document.getElementById("tl").checked && document.getElementById("sc").checked && document.getElementById("ma").checked && document.getElementById("csf").checked){
@@ -101,9 +103,13 @@ function savevalues(){
     moveinfo: document.getElementById("moveinfo").checked,
     movereleases: document.getElementById("movereleases").checked,
     moveofficial: document.getElementById("moveofficial").checked,
-    logging: document.getElementById("logging").checked
+    logging: document.getElementById("logging").checked,
+    allstatus: document.getElementById("allstatus").checked,
+    badgemargin: document.getElementById("badgemargin").checked
+    
   });
-   submit.value = "Done!"
+    this.innerText = "Done!"
+    setTimeout(() => {this.innerText = "Submit"}, 2000)
 }
 
 var vids = document.getElementById("vids");
@@ -118,4 +124,61 @@ function allselect() {
   document.getElementById("ma").checked = x;
   document.getElementById("csf").checked = x;
 
+}
+
+
+document.getElementById("sidebar-button").addEventListener("click", handle_change_sidebar)
+document.getElementById("profile-button").addEventListener("click", handle_change_profile)
+document.getElementById("forums-button").addEventListener("click", handle_change_forums)
+document.getElementById("advanced-button").addEventListener("click", handle_change_advanced)
+Array.from(document.getElementsByClassName("backbutton")).forEach((e) => {e.addEventListener("click", handle_back)})
+
+function handle_change_sidebar() {
+  console.log("ello")
+  var e = document.getElementById("main-menu");
+  e.classList.remove("menu-fade-in"); 
+  e.classList.add("menu-fade-out"); 
+  e.addEventListener("animationend", () => {e.style.display = "none";}, {once: true})
+  document.getElementById("menu-sidebar").style.display = "block";
+  document.getElementById("menu-sidebar").classList.remove("menu-fade-out");
+  document.getElementById("menu-sidebar").classList.add("menu-fade-in");
+
+}
+function handle_change_profile() {
+  var e = document.getElementById("main-menu")
+  e.classList.remove("menu-fade-in");
+  e.classList.add("menu-fade-out");
+  e.addEventListener("animationend", () => {e.style.display = "none";}, {once: true})
+  document.getElementById("menu-profiles").style.display = "block";
+  document.getElementById("menu-profiles").classList.remove("menu-fade-out");
+  document.getElementById("menu-profiles").classList.add("menu-fade-in");
+}
+function handle_change_forums() {
+  var e = document.getElementById("main-menu");
+  e.classList.remove("menu-fade-in"); 
+  e.classList.add("menu-fade-out"); 
+  e.addEventListener("animationend", () => {e.style.display = "none"; console.log(this)}, {once: true})
+  document.getElementById("menu-forums").style.display = "block";
+  document.getElementById("menu-forums").classList.remove("menu-fade-out");
+  document.getElementById("menu-forums").classList.add("menu-fade-in");
+}
+function handle_change_advanced() {
+  var e = document.getElementById("main-menu");
+  e.classList.remove("menu-fade-in"); 
+  e.classList.add("menu-fade-out"); 
+  e.addEventListener("animationend", () => {e.style.display = "none";}, {once: true})
+  document.getElementById("menu-advanced").style.display = "block";
+  document.getElementById("menu-advanced").classList.remove("menu-fade-out");
+  document.getElementById("menu-advanced").classList.add("menu-fade-in");
+}
+
+function handle_back() {
+  restore_options();
+  this.parentElement.parentElement.classList.remove("menu-fade-in"); 
+  this.parentElement.parentElement.classList.add("menu-fade-out"); 
+  this.parentElement.parentElement.addEventListener("animationend", () => {this.parentElement.parentElement.style.display = "none";}, {once: true})
+  document.getElementById("main-menu").style.display = "block";
+  document.getElementById("main-menu").classList.add("menu-fade-in");
+  document.getElementById("main-menu").classList.remove("menu-fade-out");
+  Array.from(document.getElementsByClassName("submitbutton")).forEach((e) => {e.innerText = "SUBMIT"})
 }
