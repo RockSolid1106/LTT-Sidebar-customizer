@@ -8,20 +8,11 @@ I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum
 ![image](https://user-images.githubusercontent.com/83384667/141053644-68d6a89f-6fa7-4c0a-8a1d-be77f8dddc4c.png)
 
 
-## Updated to v0.9.0 on 27th February, 2022
-Changelogs:
-- ***The script now also runs when the page on the thread is changed, or new replies have come in.***
-
-- Post count will now have the icon to match the forum theme. This only applies if you don't hide solutions count.
-- Example:
-
- ![image](https://user-images.githubusercontent.com/84492239/155879565-8fc528c0-4f72-4506-b400-4aae5e2047f4.png)
-instead of
-  ![image](https://user-images.githubusercontent.com/84492239/155879570-435d1929-c58f-4561-8285-821bfc3eae2c.png)
-
-- Changed the "Hide location" option to "Show location". If you update the extension, the option will remain the same, so you'll have to manually change it after you've updated.
-- [Minor] Added "Industry Affiliates" and "Retired Staff" as an exception to remove the group name. This was previously being hidden.
-- Minor bug fixes.
+## Updated to v0.9.1 on 24th May, 2022
+- Option to show Status Updates section on all pages. This is done by making a request to the main page and pulling the Status Updates section and concatenating it to the sidebar.
+- Redesign of the configurator.
+- [Minor] Option to manually set the margin on badges to 3px. This was previously done by default.
+- New [documentation](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/Chromium/documentation.md) for all features of the customizer.
 
 
 # Installation
@@ -35,9 +26,11 @@ You can customize the extension with ease with the icon on the address bar.
 If you're on mobile, you can open the menu with the three dots, then Addons, and then select this extension.
 
 
+Check out the [documentation](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/Chromium/documentation.md) if you need some help.
+
 
 # Errors and Issues
 Please raise an issue if the extension doesn't work properly. There might be some pages which I'm not aware of where the extension doesn't work. Please attach a screenshot of the console(Ctrl + Shift + J).
 
 # Feedback
-DM me on the LTT forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username? /s
+Please DM me on the LTT forum. It's RockSolid1106 on the forum. What are you doing here if you don't know my username? /s
