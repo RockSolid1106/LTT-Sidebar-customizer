@@ -5,20 +5,15 @@ A basic Chrome extension to customize the www.linustechtips.com forum.
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
-## Updated to v0.9.0 on 27th February, 2022
+## Updated to v0.9.0 on 24th May, 2022
 Changelogs:
-- ***The script now also runs when the page on the thread is changed, or new replies have come in.***
+- Option to show Status Updates section on all pages. This is done by making a request to the main page and pulling the Status Updates section and concatenating it to the sidebar.
 
-- Post count will now have the icon to match the forum theme. This only applies if you don't hide solutions count.
-- Example:
+- Redesign of the configurator.
 
- ![image](https://user-images.githubusercontent.com/84492239/155879565-8fc528c0-4f72-4506-b400-4aae5e2047f4.png)
-instead of
-  ![image](https://user-images.githubusercontent.com/84492239/155879570-435d1929-c58f-4561-8285-821bfc3eae2c.png)
+- [Minor] Option to manually set the margin on badges to 3px. This was previously done by default.
 
-- Changed the "Hide location" option to "Show location". If you update the extension, the option will remain the same, so you'll have to manually change it after you've updated.
-- [Minor] Added "Industry Affiliates" and "Retired Staff" as an exception to remove the group name. This was previously being hidden.
-- Minor bug fixes.
+- New [documentation](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/Chromium/documentation.md) for all features of the customizer.
 
 
 
