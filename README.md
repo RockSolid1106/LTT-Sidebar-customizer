@@ -5,7 +5,7 @@ A basic Chrome extension to customize the www.linustechtips.com forum.
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
-## Updated to v0.9.0 on 24th May, 2022
+## Updated to v0.9.1 on 24th May, 2022
 Changelogs:
 - Option to show Status Updates section on all pages. This is done by making a request to the main page and pulling the Status Updates section and concatenating it to the sidebar.
 
