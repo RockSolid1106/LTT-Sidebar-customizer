@@ -8,13 +8,9 @@ I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 ## Updated to v0.9.1 on 24th May, 2022
 Changelogs:
 - Option to show Status Updates section on all pages. This is done by making a request to the main page and pulling the Status Updates section and concatenating it to the sidebar.
-
 - Redesign of the configurator.
-
 - [Minor] Option to manually set the margin on badges to 3px. This was previously done by default.
-
 - New [documentation](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/Chromium/documentation.md) for all features of the customizer.
-
 
 
 # Installation on Microsoft Edge
