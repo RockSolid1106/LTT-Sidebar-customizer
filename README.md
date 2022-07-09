@@ -54,7 +54,8 @@ If you have the extension pinned to the browser's address bar, you can click tha
 
 ![image](https://user-images.githubusercontent.com/83384667/143073956-f038618d-dfb0-4fe2-b531-783319eb65d0.png)
 
-
+## Privacy
+This extension does not collect any information from the end user. While I'd love to say this is so because I care for and respect your privacy, this is just because I can't be bothered to implement that. Though, rest assured, I will never take the efforts to implement any sort of tracking in the extension.
 
 # Errors and Issues
 Please raise an issue if the extension doesn't work properly. There might be some pages which I'm not aware of where the extension doesn't work. Please attach a screenshot of the console(Ctrl + Shift + J).
