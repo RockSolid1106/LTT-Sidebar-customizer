@@ -201,7 +201,7 @@ browser.storage.sync.get({
 
         if (items.group){
             try{
-                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerText != "Retired Staff" && e.innerText != "Member" && e.innerText != 'Floatplane Staff' && e.innerText != 'Folding Team Leader' && e.innerText != 'Industry Affiliate' && e.innerText != 'Newbie' && e.innerText != 'Rookie' && e.innerText != 'Apprentice' && e.innerText != 'Contributor' && e.innerText != 'Explorer' && e.innerText != 'Enthusiast' && e.innerText != 'Collaborator' && e.innerText != 'Community Regular' && e.innerText != 'Rising Star' && e.innerText != 'Proficient' && e.innerText != 'Experienced' && e.innerText != 'Mentor' && e.innerText != 'Veteran' && e.innerText != 'Grand Master' )
+                document.querySelectorAll('li[data-role="group"]').forEach(e => {if (e.innerText != "Banned" && e.innerText != "Retired Staff" && e.innerText != "Member" && e.innerText != 'Floatplane Staff' && e.innerText != 'Folding Team Leader' && e.innerText != 'Industry Affiliate' && e.innerText != 'Newbie' && e.innerText != 'Rookie' && e.innerText != 'Apprentice' && e.innerText != 'Contributor' && e.innerText != 'Explorer' && e.innerText != 'Enthusiast' && e.innerText != 'Collaborator' && e.innerText != 'Community Regular' && e.innerText != 'Rising Star' && e.innerText != 'Proficient' && e.innerText != 'Experienced' && e.innerText != 'Mentor' && e.innerText != 'Veteran' && e.innerText != 'Grand Master' )
                 {e.remove()
                 }
                 })
@@ -263,9 +263,7 @@ browser.storage.sync.get({
 
         if (items.level){
             try {
-                let x = $('.lmgNav_constrainedMenu').contents().filter(function(){return this.nodeType === 8;})[1];
-                $(x).replaceWith(x.nodeValue);
-                $('.lmgNav_constrainedMenu').children(".ipsPadding").addClass("ipsBorder_bottom")
+                document.querySelector(".lmgNav_constrainedMenu").innerHTML += document.querySelector(".elMobileDrawer__rank").outerHTML;
             }catch(ex){console.log("Sidebar Customizer: "+ex)}
         }
         if (items.moveofficial){

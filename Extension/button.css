@@ -156,79 +156,8 @@ html, body {
 body {
   color: rgb(195, 195, 195);
 }
-@media screen and (min-width: 448px)
-  {
-  html {
-    background-color: #1D1D1D;
-    margin: 1em;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 0;
-    font-weight: 500;
-    overflow-y: hidden;
-  }
-  body{
-    color: rgb(195, 195, 195);
-    
-  }
-  #header {
-    text-align: center;
-    position: static;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  #logoimage {
-    width: 0.8em !important;
-  }
-  #title {
-    font-size: 1.5em;
-  }
-
-  .submitbutton, .backbutton {
-    -webkit-text-size-adjust: 100%;
-    list-style: none;
-    box-sizing: border-box;
-    margin: 0;
-    overflow: visible;
-    -webkit-appearance: button;
-    font-family: inherit;
-    line-height: inherit;
-    font-size: 3em;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding: 4px;
-    position: inline-block;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    transition: 0.1s all linear;
-    cursor: pointer;
-    user-select: none;
-    font-weight: 500;
-    background: rgb(150, 42, 0);
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 100%);
-    width: 10em !important;
-    height: 1.5em !important;
-    margin-bottom: 0.4em;
-  }
-  
-
-  #version {
-    color: #DD6B20;
-  }}
 
 
-
-
-
-  @media screen and (max-width: 447px)
-  {
 
   html {
     border: #ff4d00 2px solid;
@@ -291,4 +220,4 @@ body {
   #version {
     font-size: 0.9em;
     color: #DD6B20;
-  }}
+  }
