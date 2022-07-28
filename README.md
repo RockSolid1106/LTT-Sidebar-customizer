@@ -1,7 +1,7 @@
 
 # Linus Tech Tips forum customizer
 
-A basic Chrome extension to customize the www.linustechtips.com forum.
+A basic browser addon to customize the www.linustechtips.com forum.
 
 I am in no way affilliated with Linus Media Group or the Linus Tech Tips forum.
 
@@ -13,24 +13,10 @@ Changelogs:
 - New [documentation](https://github.com/RockSolid1106/LTT-Sidebar-customizer/blob/Chromium/documentation.md) for all features of the customizer.
 
 
-# Installation on Microsoft Edge
-This extension is available on the Microsoft Edge add-ons store!
-Just go to https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customizer/gdllbkllblabmflfhaekdalcdechepgl in Microsoft Edge and hit "Get".
-![edge](https://user-images.githubusercontent.com/83384667/141669386-4e976538-f6f9-4f31-ac0a-e00b68424c26.png)
-
-
-# Installation on Mozilla Firefox
-This extension is also available on the Mozilla Firefox add-ons store!
-Just go to https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum/ in Mozilla Firefox and Hit "Add to Firefox".
-![Screenshot (2)](https://user-images.githubusercontent.com/83384667/143074807-3ad7981c-55ab-43b9-a6ee-ed5de82e3127.png)
-
-
-
-# Installation and Setup for Chromium-based browsers
-This extension is also available on the Chrome Webstore.
-https://chrome.google.com/webstore/detail/ltt-sidebar-customizer/dcenpocomeaiachcnhogmecpalnobpcb
-![image](https://user-images.githubusercontent.com/84492239/160624058-e80ba855-86cc-4490-8cbc-8ad19204c3e9.png)
-
+# Installation
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customizer/gdllbkllblabmflfhaekdalcdechepgl)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum)
+- [Chrome](https://chrome.google.com/webstore/detail/ltt-sidebar-customizer/dcenpocomeaiachcnhogmecpalnobpcb)
 
 
 # Settings
