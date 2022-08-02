@@ -17,7 +17,7 @@ Changelogs:
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/ltt-sidebar-customizer/gdllbkllblabmflfhaekdalcdechepgl)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/customizer-for-ltt-forum)
 - [Chrome](https://chrome.google.com/webstore/detail/ltt-sidebar-customizer/dcenpocomeaiachcnhogmecpalnobpcb)
-
+- If you would like to install the extension through the source code, please send me a DM on the forum.(This is only for the moment and will be updated later with detailed instructions on how to do it yourself)
 
 # Settings
 1. Navigate to chrome://extensions(or edge://extensions). Now, click "Details" under the extension you just added.
