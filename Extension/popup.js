@@ -1,5 +1,3 @@
-// Copyright © 2022  RockSolid1106
-
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -23,6 +21,7 @@ function restore_options() {
     sc: false,
     ma: false,
     csf: false,
+    gl: false,
     mbadges: false,
     group: false,
     location: false,
@@ -46,6 +45,7 @@ function restore_options() {
     document.getElementById("sc").checked = items.sc,
     document.getElementById("ma").checked = items.ma,
     document.getElementById("csf").checked = items.csf,
+    document.getElementById("gl").checked = items.gl,
     document.getElementById('social').checked = items.social;
     document.getElementById('featured').checked = items.feat;
     document.getElementById('ad').checked = items.ad;
@@ -92,6 +92,7 @@ function savevalues(){
     sc: document.getElementById("sc").checked,
     ma: document.getElementById("ma").checked,
     csf: document.getElementById("csf").checked,
+    gl: document.getElementById("gl").checked,
     mbadges: document.getElementById("mbadges").checked,
     group: document.getElementById("group").checked,
     location: document.getElementById("location").checked,
@@ -123,6 +124,7 @@ function allselect() {
   document.getElementById("sc").checked = x;
   document.getElementById("ma").checked = x;
   document.getElementById("csf").checked = x;
+  document.getElementById("gl").checked = x;
 
 }
 

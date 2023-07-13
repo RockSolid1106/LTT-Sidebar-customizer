@@ -1,5 +1,4 @@
 /* This Chrome extension easily allows you to customize what is shown on the sidebar on the LTT Forum.
-Copyright © 2021  RockSolid1106
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -26,6 +25,7 @@ browser.storage.sync.get({
     sc: false,
     ma: false,
     csf: false,
+    gl: false,
     ////
     mbadges: false,
     group: false,
@@ -184,6 +184,24 @@ browser.storage.sync.get({
                 }
             }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
+
+        if (items.gl) {
+            try {
+                
+                if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_p4kegvrxn"]') != null){
+                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_p4kegvrxn"]').remove()
+                }
+                else if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_e2xeo8p08"]') != null){
+                    
+                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_e2xeo8p08"]').remove()
+                }
+                else {
+                    
+                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_1xbqnlvrd"]').remove()
+                }
+            }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
+        }
+
         if (items.rtopics){
             try {
                 
