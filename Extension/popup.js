@@ -119,8 +119,6 @@ function allselect() {
   document.getElementById("tq").checked = x;
   document.getElementById("tl").checked = x;
   document.getElementById("sc").checked = x;
-  document.getElementById("ma").checked = x;
-  document.getElementById("csf").checked = x;
   document.getElementById("gl").checked = x;
   document.getElementById("ws").checked = x;
 
