@@ -1,4 +1,4 @@
-<!-- 
+<!--
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -11,82 +11,85 @@ GNU General Public License for more details.
 
 -->
 
-
-<!--
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
------------- DO NOT USE THIS FILE, THIS FILE IS NO LONGER UPDATED AND WILL BE PHASED OUT ------------
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
--->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
     
   </head>
   <body>
     <div id="header"> 
-    <span id="title"><img id="logoimage" style="height: 0.8em" src="images/logo2.png"> Sidebar Customizer</span><br>
+    <span id="title"><img id="logoimage" style="width: 0.8em" src="images/logo2.png"> Sidebar Customizer</span><br>
     <span id="version"></span><br><br>
    </div>
 
     <div class="menu-placeholder">
       <div class="main-menu menus" id="main-menu">
         <div class="menu-buttons">
-          <center><button class="main-menu-buttons" id="sidebar-button" value="Sidebar" >
-          <button class="main-menu-buttons" id="profile-button" value="Profile">
-          <button class="main-menu-buttons" id="forums-button" value="Forums">
-          <button class="main-menu-buttons" id="advanced-button" value="Advanced Options"></center>
+          <button type="button" id="sidebar-button">Sidebar</button>
+          <button type="button" id="profile-button">Profile</button>
+          <button type="button" id="forums-button">Forums</button>
+          <button type="button" id="advanced-button">Advanced Options</button>
         </div>
       </div>
       <div class="menus menu-sidebar" id="menu-sidebar">
-        <span class = "menu-heading" style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Sidebar options:</span><br>
+        <span class="menu-heading">Sidebar options:</span><br>
         <label><input type="checkbox" id="ad">Hide Ad</label><br>
         <label><input type="checkbox" id="rtopics">Hide Recent Topics</label><br>
         <label><input type="checkbox" id="featured">Hide the Featured Topics section</label><br>
         <label><input type="checkbox" id="social">Hide LMG Social Links(Discord, LTT merch, etc.)</label><br>
         <label><input type="checkbox" id="vids">Hide All Recent LMG Videos</label><br>
-        &nbsp&nbsp<label><input type="checkbox" id="ltt">Linus Tech Tips</label><br>
-        &nbsp&nbsp<label><input type="checkbox" id="tq">TechQuickie</label><br>
-        &nbsp&nbsp<label><input type="checkbox" id="tl">TechLinked</label><br>
-        &nbsp&nbsp<label><input type="checkbox" id="sc">ShortCircuit</label><br>
-        &nbsp&nbsp<label><input type="checkbox" id="ma">Mac Address</label><br>
-        &nbsp&nbsp<label><input type="checkbox" id="csf">Channel Super Fun</label><br><br>
+        <div class="sub-menu">
+          <label><input type="checkbox" id="ltt">Linus Tech Tips</label><br>
+          <label><input type="checkbox" id="sc">ShortCircuit</label><br>
+          <label><input type="checkbox" id="tl">TechLinked</label><br>
+          <label><input type="checkbox" id="gl">GameLinked</label>
+          <label><input type="checkbox" id="tq">TechQuickie</label><br>
+          <label><input type="checkbox" id="ws">The WAN Show</label>
+          <br><br>
+        </div>
+        <label><input type="checkbox" id="allstatus">Show Status Updates on all pages</label><br>
 
-        <br><center><input type="button" value="Back" class="backbutton">&nbsp&nbsp<input type="button" value="Submit" class="submitbutton"></center>
+        <br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
 
       </div>
 
       <div class="menus menu-profiles" id="menu-profiles">
-        <span class = "menu-heading" style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Misc:</span><br>
+        <span class="menu-heading">Profiles:</span><br>
         <label><input type="checkbox" id="mbadges">Hide the rank icons in the member profiles</label><br>
         <label><input type="checkbox" id="mrank">Replace the "Member" with the user's rank</label><br>
         <label><input type="checkbox" id="replpcount">Replace the post count with complete post count</label><br>
         <label><input type="checkbox" id="soln">Remove the solutions count</label><br>
         <label><input type="checkbox" id="group">Hide member group (Moderator, Administrator, etc)</label><br>
         <label><input type="checkbox" id="location">Show the location below member's profiles</label><br>
-        <label><input type="checkbox" id="level">Show your level/rank in the profile dropdown</label><br><br>
-        <br><center><input type="button" value="Back" class="backbutton">&nbsp;&nbsp;<input type="button" value="Submit" class="submitbutton"></center>
+        <label><input type="checkbox" id="level">Show your level/rank in the profile dropdown</label><br>
+        <label><input type="checkbox" id="badgemargin">Set margin on rank badges to 3px on all sides(Recommended)</label>
+        <br><br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
+
 
       </div>
       <div class="menus menu-forums" id="menu-forums">
-        <span class = "menu-heading" style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Forums:</span><br>
+        <span class="menu-heading">Forums:</span><br>
         <label><input type="checkbox" id="hideofficial">Hide LTT Official forum</label><br>
         <label><input type="checkbox" id="moveinfo">Move Forum Information to The Hub</label><br>
         <label><input type="checkbox" id="movereleases">Move LTT Releases to The Hub</label><br>
-        <label><input type="checkbox" id="moveofficial">Move LTT Official below The Hub</label><br><br>
-        <br><center><input type="button" value="Back" class="backbutton">&nbsp;&nbsp;<input type="button" value="Submit" class="submitbutton"></center>
+        <label><input type="checkbox" id="moveofficial">Move LTT Official below The Hub</label>
+        <br><br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
+
 
       </div>
 
       <div class="menus menu-advanced" id="menu-advanced">
-        <span class = "menu-heading" style="color: #DD6B20; font-family: 'Zilla Slab', serif; font-size: 1.25em; padding: 0; margin: 0.3em;">Advanced:</span><br>
+        <span class="menu-heading">Advanced:</span><br>
         <label><input type="checkbox" id="logging">Enable logging for troubleshooting</label><br>
-        <br><center><input type="button" value="Back" class="backbutton">&nbsp;&nbsp;<input type="button" value="Submit" class="submitbutton"></center>
+        <br>
+        <div class="footer-buttons-wrapper"><button type="button" class="backbutton">Back</button><button type="button" class="submitbutton">Submit</button></div>
+
 
       </div>
 
