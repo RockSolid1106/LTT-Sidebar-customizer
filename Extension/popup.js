@@ -21,9 +21,8 @@ function restore_options() {
     tq: false,
     tl: false,
     sc: false,
-    ma: false,
-    csf: false,
-    gl:false,
+    gl: false,
+    ws: false,
     mbadges: false,
     group: false,
     location: false,
@@ -45,9 +44,8 @@ function restore_options() {
     document.getElementById("tq").checked = items.tq,
     document.getElementById("tl").checked = items.tl,
     document.getElementById("sc").checked = items.sc,
-    document.getElementById("ma").checked = items.ma,
-    document.getElementById("csf").checked = items.csf,
     document.getElementById("gl").checked = items.gl,
+    document.getElementById("ws").checked = items.ws,
     document.getElementById('social').checked = items.social;
     document.getElementById('featured').checked = items.feat;
     document.getElementById('ad').checked = items.ad;
@@ -75,7 +73,7 @@ document.addEventListener('DOMContentLoaded', restore_options);
 Array.from(document.getElementsByClassName("submitbutton")).forEach((e) => {e.addEventListener("click", savevalues)})
 
 function savevalues(){
-  if (document.getElementById("ltt").checked && document.getElementById("tq").checked && document.getElementById("tl").checked && document.getElementById("sc").checked && document.getElementById("ma").checked && document.getElementById("csf").checked){
+  if (document.getElementById("ltt").checked && document.getElementById("tq").checked && document.getElementById("tl").checked && document.getElementById("sc").checked && document.getElementById("ws").checked && document.getElementById("gl").checked){
     document.getElementById("vids").checked = true;
   }
   else {
@@ -92,9 +90,8 @@ function savevalues(){
     tq: document.getElementById("tq").checked,
     tl: document.getElementById("tl").checked,
     sc: document.getElementById("sc").checked,
-    ma: document.getElementById("ma").checked,
-    csf: document.getElementById("csf").checked,
     gl: document.getElementById("gl").checked,
+    ws: document.getElementById("ws").checked,
     mbadges: document.getElementById("mbadges").checked,
     group: document.getElementById("group").checked,
     location: document.getElementById("location").checked,
@@ -124,10 +121,8 @@ function allselect() {
   document.getElementById("tq").checked = x;
   document.getElementById("tl").checked = x;
   document.getElementById("sc").checked = x;
-  document.getElementById("ma").checked = x;
-  document.getElementById("csf").checked = x;
   document.getElementById("gl").checked = x;
-
+  document.getElementById("ws").checked = x;
 }
 
 
