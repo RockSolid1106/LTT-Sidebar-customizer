@@ -79,8 +79,7 @@ browser.storage.sync.get({
             } catch(ex) {if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
         ////////
-
-        if (items.ltt) {
+if (items.ltt) {
             try {
                 
                 if (document.querySelector('li[data-blockid="app_lmgsys_latestVideos_68iizozle"]') != null){
@@ -110,7 +109,7 @@ browser.storage.sync.get({
                 
                 else {
                     
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_zsf5xw7tj"]').remove()
+                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_lpc8rb6v4"]').remove()
                 }
             }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
@@ -162,7 +161,7 @@ browser.storage.sync.get({
                 }
                 else {
                     
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_1xbqnlvrd"]').remove()
+                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_wijqth7x3"]').remove()
                 }
             }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
@@ -179,7 +178,7 @@ browser.storage.sync.get({
                 }
                 else {
                     
-                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_1xbqnlvrd"]').remove()
+                    document.querySelector('li[data-blockid="app_lmgsys_latestVideos_wuw2jma8x"]').remove()
                 }
             }catch(ex){if (items.logging) {console.log("Sidebar Customizer: "+ex)}}
         }
